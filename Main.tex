@@ -13,9 +13,13 @@
 \usepackage{tocbibind}
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage{gensymb}
 
 
 \renewcommand{\arraystretch}{1.2}
+
+\newcommand{\st}{\text{ s.t. }}
+\newcommand{\qspace}{\vspace{\stretch{1}}}
 
 \hypersetup{
     colorlinks=true,
@@ -257,6 +261,45 @@ Let $\mathbb{R}$ be the set of real numbers, $\mathbb{N}$ be the set of natural 
     \question For all real numbers $x$, there exists another real number, $y$, such that $x+y=0$
   \end{minipage}
   \vspace{\stretch{1}}
+\end{questions}
+
+\newpage 
+
+\begin{tcolorbox}[title=COMBINING QUANTIFERS,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+  As you saw, the final exercise on the previous page required the use of both the universal and the existential quantifer, which is not an uncommon occurence. When we combine two quantifers in a statement they are intepreted \textbf{in the order they occur}. Thus the statements $\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z} \text{ s.t. } P(x, y) $ and $\exists x \in \mathbb{Z} \text{ s.t. } \forall y \in \mathbb{Z}\text{, } P(x, y) $ have very different meanings. This leads us to the following: \textit{switching the order of different quantifers may (and often will) change the meaning of a statement}. However, if two quantifers are of the same type, then switching the order \textbf{will not} change the value of the statement: $\forall x \in \mathbb{Z}\text{, } \forall y \in \mathbb{Q}, P(x, y) \equiv \forall y \in \mathbb{Q}\text{, } \forall x \in \mathbb{Z}, P(x, y)$ and $\exists x \in \mathbb{Q} \text{ s.t. } \exists y \in \mathbb{A} \text{ s.t. } P(x, y) \equiv \exists y \in \mathbb{A} \text{ s.t. } \exists x \in \mathbb{Q} \st P(x, y)$\footnote{$\mathbb{A}$ is the set of algebraic numbers, for more information see \href{https://en.wikipedia.org/wiki/Algebraic_number}{\underline{this link}} or \href{https://www.mathsisfun.com/numbers/algebraic-numbers.html}{\underline{this link}}}. \\ 
+  \small \textit{* Note that in these examples $P(x, y)$ is a predicate, which contains variables and becomes a statement when specific values are subsituted for the variables}
+\end{tcolorbox}
+
+Before we begin our calculus journey, there is one final logic topic I would like to cover: implication. 
+
+\begin{tcolorbox}[title=IMPLIES,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+  Implications are used for conditional statements and is represented by an arrow: $\to$. For example: if it it snowing, then it is below 32\degree F\footnote{Assume, in this case, that in order for it be snowing it \textit{must} be below 32\degree F}. We can rewrite this symbolically by representing the statement 'it is snowing' with 'S' and the statement 'it is raining' with 'R'. Thus we get: $S \to R$ which would be read as "If $S$ then $R$". The general conditional statement is $H \to C$ or "if hypothesis, then conclusion". The conditional statement is true if, and only if, both the hypothesis and the conclusion are true, or if the hypothesis is false. The second part may through some for a loop, but consider the earlier example. If it is \textit{not} snowing, then it must also not be below 32\degree F, which is another true statement. Or consider a different perspective: if it \textit{is} snowing, but it \textit{is not} below 32\degree F, then we have a contradiction, and so our statement must be false. With all this in mind, see the truth table for the conditional statement: 
+  \vspace{0.01in}
+  \begin{center}
+    \begin{tabular}{ |c|c|c| } 
+      \hline
+      $p$ & $q$ & $p \to q$ \\ 
+      \hline
+      T & T & T \\ 
+      T & F & F \\ 
+      F & T & T \\ 
+      F & F & T \\ 
+      \hline
+    \end{tabular}
+  \end{center}
+  \vspace{0.01in}
+\end{tcolorbox}
+
+For the following examples, rewrite the statement without using any symbols: \\
+\small \textit{Recall that $\mathbb{R}$ is the set of all real numbers, $\mathbb{Q}$ is the set of all rational numbers, and $\mathbb{N}$ is the set of all natural numbers}
+\begin{questions}
+  \question $\forall x \in \mathbb{R}\text{, } \exists y \in \mathbb{R} \st x * y = x$
+  \qspace 
   
+  \question $\exists a \in \mathbb{R} \st \forall b \in \mathbb{R}\text{, } a * b = a$ 
+  \qspace
+
+  \question $p \in \mathbb{N} \to p \in \mathbb{Q}$
+  \qspace
 \end{questions}
 \end{document}
