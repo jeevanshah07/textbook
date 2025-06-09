@@ -1,0 +1,68 @@
+\ProvidesPackage{textbook}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{mdframed}
+\usepackage{tocloft}
+\usepackage{tocbibind}
+\usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{import}
+
+\pgfplotsset{compat=1.18}
+\renewcommand{\arraystretch}{1.2}
+
+\newcommand{\st}{\text{ s.t. }}
+\newcommand{\qspace}{\vspace{\stretch{1}}}
+
+\hypersetup{
+    colorlinks=true,
+    linktoc=subsection,
+    linkcolor=black,}
+
+%=============================================
+        %POINTS FORMATTING
+%=============================================
+\marksnotpoints 
+%if you would prefer the exam to say "points" instead of "marks", you can delete the above line.
+
+%\pointformat{\textbf{(\thepoints)}} 
+%delete comment if you want bold points
+
+\pointsinrightmargin
+%\marginpointname{ \points}
+\bracketedpoints
+%delete comment if you want point values to be printed in the right margin instead of at the start of the question. The same command with the "right" places the point values on the left margin.
+
+%\
+
+
+%=============================================
+        %HEADER/FOOTER FORMATTING
+%=============================================
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheadrule
+\firstpageheader{}{}{}
+\runningheader{Calculus}{}{Mr. Shah}
+\firstpagefooter{}{}{}
+\runningfooter{ }{\thepage}{ }
+
+\tcbuselibrary{theorems}
+
+\NewTcbTheorem[number within=subsection]{definition}{Definition}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\NewTcbTheorem[number within=subsection]{note}{Note}%
+{colback=blue!15,colframe=blue!55!black,fonttitle=\bfseries}{th}
+
+\NewTcbTheorem[number within=subsection]{example}{Example}%
+{colback=orange!5,colframe=orange!35!black,fonttitle=\bfseries}{th}
+
+\NewTcbTheorem[number within=subsection]{question}{Question}%
+{colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}

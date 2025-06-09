@@ -1,0 +1,82 @@
+\section{Basic Group Theory}
+\subsection{Group Axioms}
+\begin{definition}{Group axioms}{}
+	Let $G = (G, *)$ be a group where $G$ is a set and $*$ the group operation. Then, the following are true:
+	\begin{enumerate}
+		\item There exists an identity element $1_{G} \in G$ such that $g * 1_{G} = 1_{G} *g = g$ for all $g \in G$.
+		\item Every element $g \in G$ has an inverse $g^{-1} \in G$ such that $g * g^{-1} = 1_{G}$
+		\item The product elements in $G$ is associative such that for $a, b, c \in G$, $(a * b) * c = a * (b * c)$.
+		\item The product of two elements in $G$ is commutative if and only if the group is abelian. (Ie. if a group $G$ is abelian then $g * q = q * g$ for all $g, q \in G$)
+	\end{enumerate}
+\end{definition}
+
+
+\begin{example}{$(\mathbb{Z}, +)$}{}
+	Let $G = (\mathbb{Z}, +)$ be the group of integers under addition. Then the identity element is $0$ and the inverse of an integer $g \in G$ is $-g$. The group operation is associative since addition is associative. The group is abelian since addition is commutative. This group is called $\mathbb{Z}$.
+\end{example}
+
+\begin{definition}{The set of Rational Numbers}{}
+	$\displaystyle\mathbb{Q} = \left\{\frac{a}{b} \hspace{0.1cm} | \hspace{0.1cm} a, b \in \mathbb{Z}, b \neq 0\right\}$
+\end{definition}
+
+\begin{question}{Group of Rational Numbers}{}
+	{Is $H = (\mathbb{Q}, *)$ a group?} Why or why not?
+\end{question}
+
+\subsection{Isomorphisms}
+\subsubsection{Bijective functions}
+\begin{definition}{Bijective Functions}{}
+	A bijective function is a function that is both injective and surjective. This means that the function is both one-to-one (ie. $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$) and onto (ie. if $F: X \to Y$ is our function, then for every $y \in Y \hspace{0.1cm}\exists x \in X : F(x)=y$)
+\end{definition}
+
+\begin{definition}{Domain, Codomain, and Range}{}
+	Let $f: X \to Y$ be a function. Then,
+	\begin{itemize}
+		\item $X$ is the \textbf{domain}
+		\item $Y$ is the \textbf{codomain}
+		\item Let $Z = \left\{ y \in Y \hspace{0.1cm} | \hspace{0.1cm} y=f(x) \hspace{0.1cm} \text{for some } x \in X\right\}$. Then, $Z$ is the \textbf{range} of $f$.
+	\end{itemize}
+\end{definition}
+
+\subsubsection{Isomorphic Groups}
+For two groups to isomorphic essentially means for them to be the same while also being different! Let's start with an example before going to a formal defintion. Consider the two groups $\mathbb{Z} = (\mathbb{Z}, +)$ and $10\mathbb{Z} = (10\mathbb{Z}, +)$ where $10\mathbb{Z} = \{\dots, -20, -10, 0 , 10 , 20, \dots\}$ and $\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$. Now, take a look at the two groups and realize that they're pretty much the exact same except in the names of the elements. Notice that we can create a \textit{bijective} function $\phi:\mathbb{Z} \to 10\mathbb{Z}$ by the map $x\mapsto 10x$. One extremely interesting property of $\phi$ is that it respects the group operation from $\mathbb{Z}$ to $10\mathbb{Z}$:
+\begin{equation*}
+	\phi(x + y) = \phi(x) + \phi(y)
+\end{equation*}
+So, we've created a function that simply just re-assigns the elements without actually changing the structure of the group. \\
+\begin{definition}{Isomorphisms}{}
+	Let $G = (G, \star)$ and $H = (H, \times)$. $G$ is \textbf{isomorphic} to $H$ if, and only if, there exists a \textit{bijective} function $\phi: G \to H$ such that $\forall g_1, g_2\in G$:
+	\begin{equation*}
+		\phi(g_1 \star g_2) = \phi(g_1) \times \phi(g_2)
+	\end{equation*}
+	$\phi$ is called an \textbf{isomorphism}. It's important to note that the left hand side uses the group operation of $G$ and the right hand side uses the group operation of $H$. Note that we can rephrase this to say: If there exists an isomorphism from $G$ to $H$ then, $G$ and $H$ are isomorphic, denoted $G \cong H$. \\
+\end{definition}
+
+\begin{example}{Integers mod 6 to multaplicative integers mod 7}{} I claim that $\mathbb{Z}/6\mathbb{Z} \cong (\mathbb{Z}/7\mathbb{Z})^{\times}$ where $\mathbb{Z}/6\mathbb{Z}$ is the group of integers modulo 6 under addition and $(\mathbb{Z}/7\mathbb{Z})^{\times}$ is the group of integers modulo 7 under \textbf{multiplication}. In order to prove isomorphism we must find a function $\phi: \mathbb{Z}/6\mathbb{Z} \to (\mathbb{Z}/7\mathbb{Z})^{\times}$ such that $\phi(x + y) = \phi(x)\phi(y)$. The bijection is
+	\begin{equation*}
+		\phi(a \bmod 6) = 3^{a} \bmod{7}
+	\end{equation*}
+	We can see this to be bijective by direct proof
+	\begin{equation*}
+		(3^0, 3^1, 3^2, 3^3, 3^4, 3^5) \equiv (1, 3, 2, 6, 4, 5) \pmod{7}
+	\end{equation*}
+	Note that it's techincally $3^{0 \bmod 6}$, but since $a \bmod b = a \Leftrightarrow a < b$ it can be omitted here. Now to verify that $\phi$ respects the group operation we must show that
+	\begin{equation*}
+		\phi(x+y \bmod 6) = \phi(x\bmod 6)\phi(y\bmod 6)
+	\end{equation*}
+	However, this is just the same as saying that $\displaystyle 3^{a+b\bmod 6} \equiv 3^{a \bmod 6}3^{b \bmod 6} \pmod{7}$ which we know to be true through properties of exponents.
+\end{example}
+
+\subsection{Orders}
+\begin{definition}{Order of a Group}{} The order of a group $G$ is the the number of elements in $G$, denoted $|G|$. $|G|$ may be finite or infinite. If $G$ is a \textbf{finite group} then $|G| < \infty$.
+\end{definition}
+\begin{definition}{Order of an Element}{} The order of an element $g \in G$ is the smallest integer $n$ such that $g^{n} = 1_G$, denoted $|g|$. If there is no value of $n$ such that $g^{n} = 1_{G}$ then $|G|=\infty$.
+\end{definition}
+
+\begin{example}{Example Orders of Groups}{}
+    \begin{itemize}
+        \item The order of the group $\mathbb{Z}$ is $|G| = \infty$.
+        \item The order of the group $\mathbb{Z}/6\mathbb{Z}$ is $|G| = 6$.
+        \item The order of the group $(\mathbb{Z}/7\mathbb{Z})^{\times}$ is $|G| = 6$.
+    \end{itemize}
+\end{example}

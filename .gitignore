@@ -2,3 +2,9 @@
 build/*
 !build/*.pdf
 carey/build
+*.aux
+*.fls
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.dvi
