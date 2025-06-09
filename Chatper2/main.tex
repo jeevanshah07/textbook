@@ -80,3 +80,61 @@ So, we've created a function that simply just re-assigns the elements without ac
         \item The order of the group $(\mathbb{Z}/7\mathbb{Z})^{\times}$ is $|G| = 6$.
     \end{itemize}
 \end{example}
+
+\subsection{Homomorphisms}
+\begin{definition}{Homomorphisms}{}
+    Let $G = (G, \star)$ and $H = (H, \times)$. A function $\phi: G \to H$ is a \textbf{homomorphism} if, and only if, $\forall g_1, g_2\in G$:
+    \begin{equation*}
+        \phi(g_1 \star g_2) = \phi(g_1) \times \phi(g_2)
+    \end{equation*}
+\end{definition}
+
+Now its important to notice the difference between an isomorphism and a homomorphism: an isomorphism is a homomorphism that is also bijective. This makes sense as isomorphism is a stricter sense of equality so it must have stricter rules. Thus, every isomorphism is a homomorphism, but not every homomorphism is an isomorphism. As well, note that a homomorphism does not need to be surjective or injective, it just needs to preseve the group operation. 
+
+\begin{example}{Examples of homomorphisms}{}
+    \begin{itemize}
+        \item The identity map $G \to G$ is a homomorphism
+        \item There exists \textbf{the trivial homomorphism} $\phi: G \to H$ such that $\phi(g) = 1_H$ for all $g \in G$. This is a homomorphism since $\phi(g_1 \star g_2) = 1_H = 1_H \times 1_H = \phi(g_1) \times \phi(g_2)$.
+        \item There is homomorphism from $\mathbb{Z}$ to $\mathbb{Z}/100\mathbb{Z}$ given by the rule $x \mapsto x \bmod 100$.
+        \item There is a homomorphism from $\mathbb{Z}$ to itself given by $x \mapsto 2x$. Note that this is injective but not surjective but is still a homomorphism.
+    \end{itemize}
+\end{example}
+Before moving on I encourge you to verify for yourself that the last two examples are indeed homomorphisms.
+
+\begin{fact}{Properties of Homomorphisms}{}
+Let $\phi$ be a homomorphism from $G$ to $H$. Then,
+    \begin{equation*}
+        \phi(1_G) = 1_H \hspace{0.1cm} \text{and} \hspace{0.1cm} \phi(g^{-1}) = \phi(g)^{-1}
+    \end{equation*}
+\end{fact}
+\begin{proof}
+    To prove the first property, we can use the fact that $1_G$ is the identity element of $G$. Thus, for any $g \in G$, we have:
+    \begin{equation*}
+        \phi(1_G) = \phi(1_G * 1_G) = \phi(1_G)\phi(1_G) \Rightarrow \phi(1_G)\phi(1_G)^{-1} = \phi(1_G)\phi(1_G)\phi(1_G)^{-1} \Rightarrow \phi(1_G) = 1_H
+    \end{equation*}
+    Recall that $\phi(g) \in H$ so $\phi(g)\phi(g)^{-1} = 1_H$ for all $g \in G$. To prove the second property, we can start with the first property and build from there:
+    \begin{equation*}
+        \phi(g * g^{-1}) = \phi(1_G) = 1_H \Rightarrow \phi(g)\phi(g^{-1}) = 1_H \Rightarrow \phi(g)\phi(g^{-1})\phi(g)^{-1} = \phi(g)^{-1} \Rightarrow \phi(g^{-1}) = \phi(g)^{-1}
+    \end{equation*}
+\end{proof}
+
+\begin{definition}{Kernel of a Homomorphism}{}
+    Let $\phi: G \to H$ be a homomorphism. The \textbf{kernel} of $\phi$, denoted $\ker(\phi)$, is the set of all elements in $G$ that map to the identity element in $H$:
+    \begin{equation*}
+        \ker(\phi) = \{ g \in G \mid \phi(g) = 1_H \}
+    \end{equation*}
+    $\ker \phi$ is a subgroup of $G$ (at the very least $1_G \in \ker \phi$)
+\end{definition}
+
+\begin{example}{Example Kernels}{}
+    \begin{itemize}
+        \item The kernel of the trivial homomorphism $\phi: G \to H$ by $x \mapsto 1_H$ is the entire group $G$ itself, $\ker(\phi) = G$.
+        \item The kernel of the homomorphism $\phi: \mathbb{Z} \to \mathbb{Z}/100\mathbb{Z}$ given by $x \mapsto x \bmod 100$ is the set of all integers that are multiples of 100, $\ker(\phi) = 100\mathbb{Z} = \{\dots, -200, -100, 0, 100, 200, \dots\}$.
+        \item The kernel of the homomorphism $\phi: \mathbb{Z} \to \mathbb{Z}$ given by $x \mapsto 2x$ is the set of all integers that are multiples of 0, which is just $\ker(\phi) = \{0\}$.
+    \end{itemize}
+
+\end{example}
+
+\begin{question}{Kernel of an Isomorphism}{}
+    What is the kernel of an isomorphism and why?
+\end{question}
