@@ -1,0 +1,54 @@
+\section{Discrete Mathematics}
+\subsection{Relations}
+\begin{definition}{Relations}{}
+    Let $X$ and $Y$ be sets. A relation $R$ from $X$ to $Y$ is a subset of $X \times Y$. An ordered pair $(x, y)$ is contained in $R$ if, and only if, $x$ is related to $y$, denoted $x~R~ y$ or $x \sim_R y$ where $x \in X$ and $y \in Y$. If $X = Y$ then it is simply a relation on $X$.
+\end{definition}
+
+\begin{example}{Example relations}{}
+    \begin{itemize}
+        \item Define a relation $E$ from $\ZZ$ to $\RR$ such that $x \sim_E y \Leftrightarrow x - y > 0$. 
+        \begin{itemize}
+            \item $5 \sim_E 3$ since $5-3 = 2 > 0$
+            \item $5 \sim_E \pi$ since $5 - \pi > 0$
+            \item $\pi \not\sim_E 5$ since $\pi - 5 < 0$
+        \end{itemize}
+
+        \item Define a relation $T$ from $A = \braces{0, 1, 2, 3}$ to $B = \braces{4, 5, 6, 7}$ by the rule $x \sim_T y \Leftrightarrow x \mid y$ 
+        \begin{itemize}
+            \item $1 \sim_T y \hspace{0.2cm} \forall y \in B$ since $y = 1k$ has solutions, namely $k=y$
+            \item $0 \not\sim_T y \hspace{0.2cm} \forall y \in B$ since $y = 0k$ has no solutions besides $0$ and $0 \notin B$
+        \end{itemize}
+    \end{itemize}
+\end{example}
+
+\begin{question}{Finding relations}{}
+    Find every element in $B$ that is related to $2 \in A$ for the relation defined in the above example.
+\end{question}
+
+\subsection{Equivalence Relations}
+\begin{definition}{Equivalence Relations}{}
+    Let $R$ be a relation on $X$. $R$ is an equivalence relation if, and only if, it is \textit{symmetric}, \textit{transative}, and \textit{reflexive}.
+    \begin{itemize}
+        \item A relation is \textit{symmetric} if $a \sim_R b \Rightarrow b \sim_R a$ for $a, b \in X$.
+        \item A relation is \textit{transative} if $a \sim_R b$ and $b \sim_R c \Rightarrow a \sim_R c$ for $a, b, c \in X$
+        \item A relation is \textit{reflexive} if $a \sim_R a$ for $a \in X$.
+    \end{itemize}
+    To prove that a relation is an equivalence relation you must show that it is reflexive, symmetric, and transitive.
+\end{definition}
+
+\begin{question}{Relation between Circuits}{circ}
+    Let $C$ be the set of all digital circuits that can be created using basic logic gates such as AND, OR, NOT, NOR, NAND, and XOR. Define a relation $\sim_E$  such that for any two circuits $a, b \in C$, $a \sim_E b$ if, and only if, $a$ and $b$ have the same truth/output tables. Prove that $\sim_E$ is an equivalence relation.
+\end{question}
+
+\begin{tcolorbox}[colback=pink!50]
+\begin{theorem}
+    $\sim_E$, as defined in~(\ref{th:circ})~is an Equivalence Relation
+\end{theorem}
+\begin{proof}
+    Let $C$ and $\sim_E$ be defined as in~(\ref{th:circ}). \\
+    \hspace*{2em}\underline{Proof of Reflexivity:} Let $a \in C$. Then $a \sim_E a$ since $a$ must have the same truth table as itself. \\
+    \hspace*{2em}\underline{Proof of Symmetry:} Let $a, b \in C$. Then $a \sim_E b$ and $b \sim_E a$ since if $a$ and $b$ have the same truth tables then $b$ and $a$ must have the same truth tables. \\
+    \hspace*{2em}\underline{Proof of Transativity:} Let $a, b, c \in C$ such that $a \sim_E b$ and $b \sim_E c$. Then, $a \sim_E c$ since if $a$ and $b$ have the same truth tables and $b$ and $c$ have the same truth tables, $a$ and $c$ must also have the same truth tables.
+    Therefore, since $\sim_E$ is reflexive, symmetric, and transitive, $\sim_E$ is an equivalence relation on $C$.
+\end{proof}
+\end{tcolorbox}

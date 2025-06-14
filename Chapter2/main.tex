@@ -138,3 +138,62 @@ Let $\phi$ be a homomorphism from $G$ to $H$. Then,
 \begin{question}{Kernel of an Isomorphism}{}
     What is the kernel of an isomorphism and why?
 \end{question}
+
+\subsection{Quotient Groups}
+The goal of this section is to define groups in the form $G/N$ such as $\mathbb{Z}/100\mathbb{Z}$. First we have to talk about the kernel and one of its important properties. Recall that the kernel of a homomorphism, $\ker \phi$ is defined as 
+\begin{equation} \label{eq:1}
+    \{g \in G \mid \phi(g) = 1_H\} 
+\end{equation}
+Also recall that for any homomorphism $\phi: G \to H$ for $G = (G, \star)$ and $H = (H, \times)$
+\begin{equation} \label{eq:2}
+    \phi(x \star y) = \phi(x) \times \phi(y)
+\end{equation}
+Now if we combine~\textbf{\ref{eq:1}} and~\textbf{\ref{eq:2}} it should be evident that for any $g \in \ker\phi$ we have the following, 
+\begin{equation} \label{eq:3}
+    \phi(g \star x) = \phi(g) \times \phi(x) = 1_H \times \phi(x) = \phi(x)
+\end{equation}
+So, interestingly enough, it seems as if for any $g \in \ker \phi$ our homomorphism can completely ignore it! Now what does this mean for us in our journey to define a quotient group? Well, lets work with a concrete example to start. Consider the integers modulo 100, $\ZZ/100\ZZ$, which we know to be the set
+\begin{equation}
+    \ZZ/100\ZZ = \{0, 1, 2, 3, \dots, 97, 98, 99\}
+\end{equation}
+Now, lets try to define this as a quotient group. We'll begin by taking a look at a homomorphism $\phi: \ZZ to \ZZ/100\ZZ$. It should be clear that $\ker \phi = 100\ZZ$ as $\forall g \in 100\ZZ, \hspace{0.1cm} g \bmod 100 = 0$. Now, let $N = 100\ZZ$ and consider the following
+\begin{align*}
+    N &= \{\dots, -200, -100, 0, 100, 200, \dots\} \\
+    N + 1 &= \{\dots, -199, -99, 1, 101, 201, \dots\} \\
+    N + 2 &= \{\dots, -198, -98, 2, 102, 202, \dots\} \\
+    &\vdots  \\
+    N + 97 &= \{\dots, -103, -3, 97, 197, 297, \dots\} \\
+    N + 98 &= \{\dots, -102, -2, 98, 198, 298, \dots\} \\
+    N + 99 &= \{\dots, -101, -1, 99, 199, 299, \dots\} \\
+\end{align*}
+
+Now we can notice that for $n \in [0, 99]$ if we hold $n$ constant then the image of $\phi(N + n)$ is the same and no two values of $n$ produce the same image. Now I put forth the idea that our quotient group, $Q$, can be thought of the set whose elements are the above sets: 
+\begin{equation}
+    Q = \ZZ/100\ZZ = \{N, N+1, N+2, \dots, N+97, N+98, N+99\}
+\end{equation}
+This allows us to construct an equivalence relation on $G$ by saying $x \sim_N y \Leftrightarrow \phi(x) = \phi(y)$ and then think of $Q$ as the equivalence classes of $\sim_N$. Regardless of how you decide to view it, most people find it easier to simply choose on element from each set and use that to represent the different sets. For example, 
+\begin{equation*}
+    \ZZ/2\ZZ = \braces{\braces{\dots, -2, 0, 2, \dots}, \braces{\dots, -3, -1, 1, \dots}} = \braces{0, 1}
+\end{equation*}
+This idea is analgous to taking each `fiber' and collapsing it onto a single element. So, what does this all mean? In short, if we have a quotient group $Q \cong G/N$ we can construct $Q$ by using the left cosets of $N$ where $N$ is a normal subgroup of $G$. 
+
+\begin{definition}{Normal Subgroup}{}
+    Let $G$ be a group. A subgroug $N$ of $G$ is a \textbf{normal subgroup} of $G$ if it is the kernel of some homomorphism. This is denoted as $N \trianglelefteq G$.
+\end{definition}
+
+\begin{definition}{Left Cosets}{}
+    Consider a group $N$ such that $N$ is a subgroup of $G$. Any get in the form $gN$ is a \textbf{left coset} of $N$. Note that $N$ can be \textit{any} subgroup of $G$.
+\end{definition}
+
+So, to put it all together,
+\begin{definition}{Quotient Groups}{}
+    Let $N \trianglelefteq G$. Then the quotient group $G/N$ will be the group whose elements are the left cosets of $N$. We must also define the product of two elements in $G/N$, or the product of two cosets $C_1, C_2 \in G/N$. 
+    \begin{itemize}
+        \item If $c_1$ is the value associated with $C_1$ and $c_2$ is the value associated with $C_2$ then the product $C_1C_2$ will be the coset that contains $c_1c_2$
+        \item We can also defing $C_1C_2$ through the representations of $C_1$ and $C_2$. By definition of cosets we know that 
+        \begin{equation*}
+            C_1 = g_1N \hspace{0.2in} \text{and} \hspace{0.2in} C_2 = g_2N
+        \end{equation*}
+        for $g_1, g_2 \in G$. Thus, by the same logic above, $C_1C_2$ contains is the coset that contains $g_1g_2$. This definition is equivalent to the one above since $\phi\left(g_1g_2\right) = \phi\left(g_1\right)\phi\left(g_2\right) = c_1c_2$. So, its important to note how we can define this product both in terms of elements in $G$ as well as elements in $H$.
+    \end{itemize}
+\end{definition}

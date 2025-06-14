@@ -10,3 +10,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Isomorphic Groups}{7}{subsubsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.3}Orders}{8}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Homomorphisms}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Quotient Groups}{10}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Discrete Mathematics}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Relations}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Equivalence Relations}{12}{subsection.3.2}%
