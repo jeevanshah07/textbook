@@ -14,3 +14,4 @@
 \contentsline {section}{\numberline {3}Discrete Mathematics}{12}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Relations}{12}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Equivalence Relations}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Equivalence Classes}{13}{subsubsection.3.2.1}%
