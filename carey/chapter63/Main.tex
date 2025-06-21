@@ -1,0 +1,118 @@
+\addcontentsline{toc}{subsection}{Ratio and Root Tests}
+\subsection*{Ratio and Root Tests}
+
+\begin{tcolorbox}[title= THE RATIO TEST,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    Let     $\displaystyle\sum a_n$ be a series with nonzero terms.
+    \begin{enumerate}
+        \item $\displaystyle\sum a_n$ converges absolutely if $\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|<1$.
+        \item $\displaystyle\sum a_n$ diverges if $\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|>1$ or $\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|=\infty$.
+        \item The Ratio Test is inconclusive if $\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|=1$.
+    \end{enumerate}
+
+\end{tcolorbox}
+\vspace{.1in}
+\noindent\textbf{ONE IMPORTANT FACT}:
+\begin{questions}
+    \question This is not the one stop shop for tests of convergence, but \textit{usually} is for series involving factorials or exponentials.
+\end{questions}
+\vspace{.1in}
+
+\noindent\textbf{Example:}\\
+Determine the convergence or divergence of each series.
+\begin{parts}
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=0}^\infty \frac{2^n}{n!}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^\infty \frac{n^n}{n!}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \part $\displaystyle\sum_{n=1}^\infty (-1)^n \frac{\sqrt{n}}{n+1}$
+    
+    \vspace{\stretch{1}}
+    
+\end{parts}
+
+\newpage
+
+\begin{tcolorbox}[title= THE ROOT TEST,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    Let
+    $\displaystyle\sum a_n$ be a series.
+    \begin{enumerate}
+        \item $\displaystyle\sum a_n$ converges absolutely if $\displaystyle\lim_{n\to\infty}\sqrt[n]{\left|a_n\right|}<1$.
+        \item $\displaystyle\sum a_n$ diverges if $\displaystyle\lim_{n\to\infty}\sqrt[n]{\left|a_n\right|}>1$ or $\displaystyle\lim_{n\to\infty}\sqrt[n]{\left|a_n\right|}=\infty$.
+        \item The Root Test is inconclusive if $\displaystyle\lim_{n\to\infty}\sqrt[n]{\left|a_n\right|}=1$.
+    \end{enumerate}
+
+\end{tcolorbox}
+\vspace{.1in}
+
+\noindent\textbf{ONE IMPORTANT FACT}:
+\begin{questions}
+    \question The Root Test is always inconclusive for a $p$-series. So don't even bother.
+\end{questions}
+\vspace{.1in}
+\noindent\textbf{Example:}\\
+Test the series for convergence or divergence. Afterwards, \textit{try} the Ratio Test to see why it is not ideal.
+$\displaystyle\sum_{n=1}^\infty \frac{e^{2n}}{n^n}$
+
+
+\newpage
+
+\noindent\textbf{\Large Strategies for Testing Series}\\
+\\
+You have learned 10 strategies for testing a series for convergence or divergence. 
+
+\textbf{Guidelines for Testing a Series:}
+\begin{enumerate}
+    \item Does the $n$th term approach 0? If not, the series diverges.
+    \item Is the series one of the special types (geo, $p$-series, telescoping, alternating)?
+    \item Can the integral test, ratio test, or root test be applied?
+    \item Can the series be compared favorably to one of the special types?
+\end{enumerate}
+
+\noindent\textbf{Example: Applying Strategies}
+\begin{parts}
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}\frac{n+1}{3n+1}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}\left(\frac{\pi}{6}\right)^n$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}ne^{-n^2}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}\frac{1}{3n+1}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \newpage
+    
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}(-1)^n\frac{3}{4n+1}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^{\infty}\frac{n!}{10^n}$
+    \end{minipage}
+    \vspace{\stretch{1}}
+    \part $\displaystyle\sum_{n=1}^{\infty}\left(\frac{n+1}{2n+1}\right)^n$
+    \vspace{\stretch{1}}
+
+
+\end{parts}
+
+
+\newpage

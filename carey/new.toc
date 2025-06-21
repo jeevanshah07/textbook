@@ -1,0 +1,83 @@
+\contentsline {section}{Contents}{2}{section*.1}%
+\contentsline {section}{Limits}{5}{section*.1}%
+\contentsline {subsection}{Introduction}{5}{section*.2}%
+\contentsline {subsection}{Properties of Limits}{10}{Item.14}%
+\contentsline {subsection}{Limits Involving Infinity}{11}{Item.21}%
+\contentsline {subsection}{Continuity}{13}{Item.35}%
+\contentsline {subsection}{Intermediate Value Theorem}{15}{Item.53}%
+\contentsline {subsection}{Rates of Change \& Tangent Lines}{16}{Item.55}%
+\contentsline {section}{Derivatives}{19}{Item.59}%
+\contentsline {subsection}{Definition of the Derivative}{19}{section*.9}%
+\contentsline {subsection}{Rules for Differentiation A}{20}{Item.61}%
+\contentsline {subsection}{Rules for Differentiation B}{22}{Item.83}%
+\contentsline {subsection}{Distance, Velocity, \& Acceleration}{24}{Item.100}%
+\contentsline {subsection}{Derivatives of Sine and Cosine}{26}{Item.117}%
+\contentsline {subsection}{The Chain Rule}{27}{Item.120}%
+\contentsline {subsection}{Derivatives of Trigonometric Functions}{29}{Item.132}%
+\contentsline {subsection}{Implicit Differentiation}{30}{Item.137}%
+\contentsline {subsection}{Derivatives of Transcendental Functions}{33}{Item.147}%
+\contentsline {subsection}{Logarithmic Differentiation}{37}{Item.167}%
+\contentsline {subsection}{Differentiability \& Graphing Derivatives}{38}{Item.171}%
+\contentsline {subsection}{Extreme Values of Functions}{41}{Item.175}%
+\contentsline {subsection}{Curve Sketching}{46}{Item.199}%
+\contentsline {subsection}{Mean Value Theorem}{49}{Item.258}%
+\contentsline {subsection}{Modeling \& Optimization}{50}{Item.262}%
+\contentsline {subsection}{Related Rates}{53}{Item.270}%
+\contentsline {subsection}{L'Hopital's Rule}{56}{Item.278}%
+\contentsline {subsection}{Differentials, Linearization, Newton's Method}{57}{Item.282}%
+\contentsline {section}{Integrals}{58}{section*.28}%
+\contentsline {subsection}{Basic Integration Rules}{58}{section*.29}%
+\contentsline {subsection}{Integration of Trigonometric Functions}{60}{Item.296}%
+\contentsline {subsection}{Integration of Transcendental Functions}{62}{Item.303}%
+\contentsline {subsection}{Constant of Integration \& Applications}{64}{Item.314}%
+\contentsline {subsection}{Definite Integration}{66}{Item.322}%
+\contentsline {subsection}{Area Under the Curve with RAM}{68}{Item.330}%
+\contentsline {subsection}{The Definite Integral as Area Under the Curve}{72}{section*.38}%
+\contentsline {subsection}{Limit-to-Integral and Integral-to-Limit}{73}{section*.39}%
+\contentsline {subsection}{Average Value \& Mean Value Theorem}{75}{Item.341}%
+\contentsline {subsection}{The Fundamental Theorem of Calculus}{77}{Item.344}%
+\contentsline {subsection}{Separation of Variables}{80}{Item.358}%
+\contentsline {subsection}{Differential Equations}{82}{Item.366}%
+\contentsline {subsection}{Slope Fields}{83}{section*.45}%
+\contentsline {subsection}{Logistic Differential Equations}{84}{Item.367}%
+\contentsline {subsection}{Euler's Method}{86}{Item.372}%
+\contentsline {subsection}{Areas in the Plane}{87}{Item.376}%
+\contentsline {subsection}{Volumes of Revolution}{89}{Item.381}%
+\contentsline {subsection}{Arc Length}{94}{Item.392}%
+\contentsline {section}{Advanced Integration Techniques}{95}{Item.395}%
+\contentsline {subsection}{Integration Review}{95}{section*.52}%
+\contentsline {subsection}{Integration by Parts}{97}{Item.400}%
+\contentsline {subsection}{Trigonometric Combinations}{99}{Item.408}%
+\contentsline {subsection}{Trigonometric Substitution}{101}{Item.414}%
+\contentsline {subsection}{Partial Fraction Decomposition}{103}{table.9}%
+\contentsline {subsection}{Improper Integrals}{107}{Item.422}%
+\contentsline {section}{Sequences \& Series}{111}{Item.438}%
+\contentsline {subsection}{Sequences Basics}{111}{section*.59}%
+\contentsline {subsection}{Series \& Convergence}{114}{Item.454}%
+\contentsline {subsection}{Geometric Series}{116}{Item.457}%
+\contentsline {subsection}{\textit {n}th-Term Test for Divergence}{117}{Item.461}%
+\contentsline {subsection}{Integral Test \& \textit {p}-Series}{118}{Item.464}%
+\contentsline {subsection}{Comparison of Series}{121}{Item.477}%
+\contentsline {subsection}{Alternating Series}{123}{Item.487}%
+\contentsline {subsection}{Conditional and Absolute Convergence}{126}{Item.501}%
+\contentsline {subsection}{Ratio and Root Tests}{128}{Item.507}%
+\contentsline {subsection}{Taylor Polynomials \& Approximations}{132}{Item.529}%
+\contentsline {subsection}{Remainder of a Taylor Polynomial}{136}{Item.533}%
+\contentsline {subsection}{Power Series}{139}{Item.540}%
+\contentsline {subsection}{Radius and Interval of Convergence}{140}{section*.71}%
+\contentsline {subsection}{Differentiating and Integrating Power Series}{142}{Item.548}%
+\contentsline {subsection}{Geometric Power Series}{143}{Item.551}%
+\contentsline {subsection}{Taylor \& MacLaurin Series}{145}{Item.557}%
+\contentsline {subsection}{Taylor \& Maclaurin Manipulation}{147}{Item.560}%
+\contentsline {subsection}{Plane Curves and Parametric Equations}{149}{Item.565}%
+\contentsline {section}{Polar, Parametric, \& Vector Equations}{150}{section*.77}%
+\contentsline {subsection}{Parametric Equations \& Calculus}{150}{section*.78}%
+\contentsline {subsection}{Vector Functions and Motion}{152}{Item.568}%
+\contentsline {subsection}{Polar Coordinates and Graphs}{154}{Item.579}%
+\contentsline {subsection}{Polar Equations \& Calculus}{156}{Item.591}%
+\contentsline {subsection}{Polar Area}{157}{Item.596}%
+\contentsline {section}{Appendix}{161}{Item.604}%
+\contentsline {subsection}{Hierarchy of Functions}{161}{section*.84}%
+\contentsline {subsection}{Definitions and Theorems}{162}{section*.84}%
+\contentsline {subsection}{Series Tests Summary}{164}{section*.84}%
+\contentsline {subsection}{A Quote}{165}{section*.84}%

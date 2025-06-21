@@ -1,0 +1,107 @@
+\addcontentsline{toc}{subsection}{Improper Integrals}
+\subsection*{Improper Integrals}
+\textbf{Recall} the following two conditions from theorems earlier this year:
+\begin{enumerate}
+
+    \item The definition of the definite integral requires that the interval $[a,\,b]$ is finite.
+    \item The Fundamental Theorem of Calculus requires that the function is continuous on $[a,\,b]$.
+\end{enumerate}
+Integrals that do not possess these properties are called \textbf{improper integrals}, and we can still compute them with the addition of limits!
+
+\begin{tcolorbox}[title= DEFINITION OF IMPROPER INTEGRALS WITH INFINITE BOUNDS,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    \begin{enumerate}
+        \item If $f$ is continuous on the interval $[a,\,\infty)$, then 
+        \[\int_a^\infty f(x)\,dx=\lim_{b\to\infty}\int_a^b f(x)\,dx.\]
+        \item If $f$ is continuous on the interval $(-\infty,\,b]$, then 
+        \[\int_{-\infty}^b f(x)\,dx=\lim_{a\to-\infty}\int_a^b f(x)\,dx.\]
+        \item If $f$ is continuous on the interval $(-\infty,\,\infty)$, then 
+        \[\int_{-\infty}^\infty f(x)\,dx=\int_{-\infty}^c f(x)\,dx + \int_c^{\infty} f(x),\,dx\]
+        where $c$ is any real number.
+    \end{enumerate}
+    
+    If the limit exists, then it is said that improper integral \textbf{converges}, otherwise, it \textbf{diverges}. In the third case, if either of the integrals on the right diverge, then so does the one on the left.
+
+\end{tcolorbox}
+
+\textbf{Examples:}
+\begin{questions}
+    \question Evaluate $\displaystyle\int_1^\infty \frac{1}{x}\,dx$.
+    \vspace{\stretch{1}}
+    
+    \newpage
+    
+    \begin{minipage}{.45\linewidth}
+        \question $\displaystyle\int_1^\infty e^{-x}\,dx$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.45\linewidth}
+        \question $\displaystyle\int_1^\infty (1-x)e^{-x} \,dx$
+    \end{minipage}
+
+    \vspace{\stretch{1}}
+    
+    
+    \question $\displaystyle\int_{-\infty}^\infty\frac{e^x}{1+e^{2x}}\,dx$
+
+    \vspace{\stretch{1}}
+
+\end{questions}
+
+\newpage
+
+
+\begin{tcolorbox}[title= DEFINITION OF IMPROPER INTEGRALS WITH INFINITE DISCONTINUITIES,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    \begin{enumerate}
+        \item If $f$ is continuous on the interval $[a,b)$ and has an infinite discontinuity at $b$, then 
+        \[\int_a^b f(x)\,dx=\lim_{c\to b^-}\int_a^c f(x)\,dx.\]
+        \item If $f$ is continuous on the interval $(a,b]$ and has an infinite discontinuity at $a$, then 
+        \[\int_a^b f(x)\,dx=\lim_{c\to a^+}\int_c^b f(x)\,dx.\]
+        \item If $f$ is continuous on the interval $[a,b]$ except for some $c$ in $(a,b)$ at which $f$ has an infinite discontinuity, then 
+        \[\int_a^b f(x)\,dx=\int_{a}^c f(x)\,dx + \int_c^{b} f(x),\,dx.\]
+    \end{enumerate}
+    
+    If the limit exists, then it is said that improper integral \textbf{converges}, otherwise, it \textbf{diverges}. In the third case, if either of the integrals on the right diverge, then so does the one on the left.
+
+\end{tcolorbox}
+
+
+\textbf{Examples:}
+\begin{questions}
+    \begin{minipage}{.45\linewidth}
+        \question Evaluate $\displaystyle\int_0^1\frac{dx}{\sqrt[3]{x}}$.    
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.45\linewidth}
+        \question Evaluate $\displaystyle\int_0^2\frac{dx}{x^3}$.
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \newpage
+    
+    \question Evaluate $\displaystyle\int_{-1}^2\frac{dx}{x^3}$.
+    
+    \vspace{\stretch{1}}
+    
+    
+    
+    \question Evaluate $\displaystyle\int_0^\infty\frac{dx}{\sqrt{x}(x+1)}.$
+    
+    \vspace{\stretch{1}}
+\end{questions}
+
+
+\begin{tcolorbox}[title= A SPECIAL IMPROPER INTEGRAL,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    \[\int_1^\infty\frac{dx}{x^p}=
+    \begin{cases}
+        \frac{1}{p-1} & \text{if }p>1\\
+        \text{diverges} & \text{if }p\le1
+    \end{cases}\]
+
+\end{tcolorbox}
+
+
+\newpage

@@ -1,0 +1,58 @@
+\addcontentsline{toc}{subsection}{Euler's Method}
+\subsection*{Euler's Method}
+
+% Make own section, Larger title, add 1-2 more examples/applications of EM. Prob own page.
+
+\textbf{Euler's Method:} This is an method to approximate the particular solution of a differential equation $y'=F(x,\,y)$ that passes through $(x_0,\,y_0)$.
+
+\begin{tikzpicture}[
+    scale=.8,
+    thick,
+    >=latex',
+    dot/.style = {
+      draw,
+      fill = black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }
+  ]
+  \coordinate (O) at (0,0);
+  \draw[->] (-0.3,0) -- (8,0) coordinate[label = {below:$x$}] (xmax);
+  \draw[->] (0,-0.3) -- (0,5) coordinate[label = {right:$f(x)$}] (ymax);
+  \path[name path=x] (0.3,0.5) -- (6.7,4.7);
+  \path[name path=y] plot[smooth] coordinates {(-0.3,1) (2,1.5) (4,2.8) (6,5)};
+  \scope[name intersections = {of = x and y, name = i}]
+    
+    
+    \draw plot[smooth] coordinates {(-0.3,1) (2,1.5) (4,2.8) (6,5)};
+    \draw (i-1) node[dot, label = {above:$(x_0,\,y_0)$}] {};
+    \draw (4,2.2) node[dot, label = {above right:$(x_1,\,y_1)$}] {};
+    
+    \draw[-,thin] (i-1) -- node[below] {$h$} (4,1.4);
+    \draw[->,thin,shorten >=.1cm] (4,1.4) -- node[right] {$hF(x_0,\,y_0)$} (4,2.2);
+    \draw[->,semithick,shorten <=-1cm,shorten >=.1cm] (i-1) -- (4,2.2);
+    
+  \endscope
+\end{tikzpicture}
+
+\begin{questions}
+    \question Use Euler's Method to approximate the particular solution to the differential equation $y'=x-y$ passing through the point $(0,\,1)$. Use a step of $h=0.2.$
+    
+    \begin{parts}
+        \part Perform three iterations.
+        \vspace{\stretch{1}}
+        
+        \part approximate $y(0.8).$
+        \vspace{\stretch{1}}
+    \end{parts}
+    
+    \question Consider the differential equation $\displaystyle\frac{dy}{dx}=3x+2y+1$. Let $y=f(x)$ be a particular solution to the differential equation with initial condition $f(0)=2$. Use Euler's Method, starting at $x=0$, with step size of $\frac{1}{2}$, to approximate $f(1)$. (No Calc!)
+    
+    \vspace{\stretch{1.2}}
+\end{questions}
+
+
+
+
+\newpage

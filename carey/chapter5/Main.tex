@@ -1,0 +1,82 @@
+\addcontentsline{toc}{subsection}{Limits Involving Infinity}
+\subsection*{Limits Involving Infinity}
+There are two kinds: one where the answer is infinity and one where you are finding the limit as $x$ approaches infinity.
+\begin{questions}
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to2^-}\frac{1}{x-2}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to2^+}\frac{1}{x-2}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to2}\frac{1}{x-2}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to\infty}\frac{1}{x-2}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+\end{questions}
+For problems involving polynomial and rational functions, we can determine the result of the limit without sketching the graph. Always consider the \textbf{dominant term} when evaluating.
+
+\begin{questions}
+    \question $\displaystyle\lim_{x\to\infty}x^3+2x+1$\vspace{\stretch{1}}
+    \question $\displaystyle\lim_{x\to\infty}-x^3+x^2+1$\vspace{\stretch{1}}
+    \question $\displaystyle\lim_{x\to\infty}\frac{7x^3}{x^3-3x^2+6x}$\vspace{\stretch{1}}
+\end{questions}
+
+\newpage
+
+\begin{tcolorbox}[title= SHORTCUT FOR EVALUATING LIMITS AT INFINITY,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black,boxrule=1pt]
+
+    Let $\displaystyle\frac{f(x)}{g(x)}$ be a rational function.
+    \begin{enumerate}
+        \item If $\deg f(x)>\deg g(x)$, then $\displaystyle\lim_{x\to\infty}\frac{f(x)}{g(x)}=\infty$ or $-\infty$.
+        \item If $\deg f(x)<\deg g(x)$, then $\displaystyle\lim_{x\to\infty}\frac{f(x)}{g(x)}=0$.
+        \item If $\deg f(x)=\deg g(x)$, then $\displaystyle\lim_{x\to\infty}\frac{f(x)}{g(x)}=\frac{a}{b}$ where $a$ and $b$ are the leading coefficients of $f(x)$ and $g(x)$ respectively.
+    \end{enumerate}
+   
+\end{tcolorbox}
+\vspace{.15cm}
+\noindent\textbf{Examples:}
+\begin{questions}
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to \infty}\frac{3x^3-x+1}{x+3}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to\infty }\frac{1}{x^2}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to\infty}\frac{3x^2+5}{2x^2+x+3}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+    \question $\displaystyle\lim_{x\to \infty}\sqrt{\frac{x+1}{x}}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+\end{questions}
+
+
+\begin{tcolorbox}[title= LIMITS AND ASYMPTOTES,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black,boxrule=1pt]
+
+    If $\displaystyle\lim_{x\to a^-}f(x)=\pm\infty$ or if $\displaystyle\lim_{x\to a^+}f(x)=\pm\infty$, then the line $x=a$ is a \textbf{vertical asymptote} of the graph $f(x)$.\\
+    
+    If $\displaystyle\lim_{x\to\infty}f(x)=b$ or if $\displaystyle\lim_{x\to -\infty}f(x)=b$, then the line $y=b$ is a \textbf{horizontal asymptote} of the graph $f(x)$.
+    
+    
+   
+\end{tcolorbox}
+
+
+\newpage

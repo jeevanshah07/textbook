@@ -1,0 +1,81 @@
+\addcontentsline{toc}{subsection}{Logistic Differential Equations}
+\subsection*{Logistic Differential Equations}
+
+Before we talk about the LDE, first let's consider the following scenario:
+\begin{questions}
+    \question Let $N(t)$ be the population of wild coyotes in observed in a study of a wildlife reserve, with $t$ in years. The growth of the population is proportional to $650-N$. Initially, there are 300 coyotes. After two years, there is observed to be 500 coyotes. Find $N(3)$.
+    
+    \vspace{\stretch{1.2}}
+\end{questions}
+
+Correct answer! However, there is something \textit{inaccurate} about our work. What is it? Why?
+
+
+
+\begin{center}
+    \underline{A 'Normal' Differential Equation}
+\end{center}
+\begin{minipage}{0.45\linewidth}
+    
+        Differential Equation: $\displaystyle\frac{dy}{dt}=ky$
+    
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+    
+        General Solution: $\displaystyle y=Ce^{kt}$
+    
+\end{minipage}
+
+This type of differential equation allows for \textbf{unlimited growth}. Obviously, we do not live in a world of infinites, so there cannot be an infinite number of coyotes as time goes on. We need a \textbf{carrying capacity}, $L$, to limit our growth. 
+
+
+\begin{center}
+    \underline{The Logistic Differential Equation}
+\end{center}
+\begin{minipage}{0.45\linewidth}
+    
+        Differential Equation:\\ 
+        $\displaystyle\frac{dy}{dt}=ky\left(1-\frac{y}{L}\right)$ or $\displaystyle\frac{dy}{dt}=\frac{ky}{L}(L-y)$
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+    
+        General Solution: $\displaystyle y=\frac{L}{Ce^{-kt}+1}$
+    
+\end{minipage}
+
+\vspace{.25in}
+
+%typo
+
+\begin{center}
+    \textbf{\large Memorize both forms of the differential equation and its general solution for the BC Exam!}
+\end{center}
+
+
+\newpage
+
+
+
+\begin{questions}
+    \setcounter{question}{1}
+    \question 40 elk are released into a game refuge. After 5 years, the population of elk is observed to be 104. The game warden says that the refuge can support no more than 4000 elk at any given time.
+    \begin{parts}
+        \part Write a differential equation for the population of elk.
+        \vspace{\stretch{1}}
+        
+        \part Write a model for the population, $P$, in terms of $t$. (Use the general solution, do not attempt to integrate!)
+        \vspace{\stretch{1}}
+    \end{parts}
+    
+    \question Find $\displaystyle\frac{d^2 y}{dx^2}$ for the general L.D.E. What can we deduce based on this function?
+    \vspace{\stretch{1}}
+\end{questions}
+
+
+\textit{\footnotesize Solving for the general solution to a LDE requires an integration method not yet covered. We will circle back and derive it as an exercise later.}
+
+
+\newpage

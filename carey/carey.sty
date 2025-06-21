@@ -1,0 +1,105 @@
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\usepackage{mdframed}
+\usepackage{tocloft}
+\tcbuselibrary{skins}
+\usetikzlibrary{positioning}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tocbibind}
+\usepackage{enumitem}
+\usepackage{import}
+\usepackage{luatextra}
+\usepackage{adjustbox}
+\usepackage{qrcode}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+
+% A special dedication to Heather Shaffer. Thank you so much for everything. This would not exist without you.
+
+
+
+
+%==============================================================
+        %DEFINING NEW COMMANDS
+%==============================================================
+
+
+\hypersetup{
+    colorlinks=true,
+    linktoc=subsection,
+    linkcolor=black,}
+
+\newcommand{\tikzmark}[3][]{\tikz[remember picture,baseline] \node [anchor=base,#1](#2) {$#3$};}
+
+
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}         % = `top' strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\renewcommand\cftsecfont{\normalfont}
+\renewcommand\cftsecpagefont{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsecdotsep{\cftdot}
+\renewcommand\cftsubsecdotsep{\cftdot}
+
+\tcbset{
+    Baystyle/.style={
+        sharp corners,
+        enhanced,
+        colback=white,
+        boxrule=6pt,
+        colframe=black,
+        height=\textheight,
+        width=\textwidth,
+        borderline={8pt}{-11pt}{},
+    }
+}
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\tikzset{%
+  add/.style args={#1 and #2}{to path={%
+ ($(\tikztostart)!-#1!(\tikztotarget)$)--($(\tikztotarget)!-#2!(\tikztostart)$)%
+  \tikztonodes}}
+} 
+
+
+\newcommand{\entry}[2]{\textbf{#1}\quad {#2}}
+
+%==============================================================
+        %POINTS FORMATTING
+%==============================================================
+\marksnotpoints 
+\pointsinrightmargin
+\bracketedpoints
+
+
+%==============================================================
+        %HEADER/FOOTER FORMATTING
+%==============================================================
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheadrule
+\firstpageheader{}{}{}
+\runningheader{AP BC Calculus}{}{Mr. Carey}
+\firstpagefooter{}{}{}
+\runningfooter{ }{\thepage}{ }
+
+
+
+%================================================================
+        %THE COVER PAGE
+%================================================================
+
+

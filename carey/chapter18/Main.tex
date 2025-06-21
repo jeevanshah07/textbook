@@ -1,0 +1,132 @@
+\addcontentsline{toc}{subsection}{Derivatives of Transcendental Functions}
+\subsection*{Derivatives of Transcendental Functions}
+\begin{tcolorbox}[title= DERIVATIVES OF INVERSE TRIGONOMETRIC FUNCTIONS,colframe=black,sharp corners, colback=white, colbacktitle=white, coltitle=black, boxrule=1pt]
+    
+    Let $u$ be a differentiable function of $x$.
+    \begin{align*}
+        \frac{d}{dx}(\arcsin u) &= \frac{du}{\sqrt{1-u^2}} & \frac{d}{dx}(\arccos u) &= \frac{-du}{\sqrt{1-u^2}}\\
+        \frac{d}{dx}(\arctan u) &= \frac{du}{1+u^2} & \frac{d}{dx}(\text{arccot } u) &= \frac{-du}{1+u^2}\\
+        \frac{d}{dx}(\text{arcsec } u) &= \frac{du}{|u|\sqrt{u^2-1}} & \frac{d}{dx}(\text{arccsc } u) &= \frac{-du}{|u|\sqrt{u^2-1}}\\
+    \end{align*}
+\end{tcolorbox}
+\vspace{.15cm}
+\noindent\textbf{Examples:} Find $\displaystyle\frac{dy}{dx}$.
+\begin{questions}
+    \question $\displaystyle y=\sin^{-1}x^2$
+    \vspace{\stretch{1}}
+    
+    \question $\displaystyle y=\cos^{-1}\left(\frac{1}{x}\right)$
+    \vspace{\stretch{1}}
+    
+    \question $\displaystyle y=\cot^{-1}\sqrt{x}$
+    \vspace{\stretch{1}}
+    
+    \question $\displaystyle y=x\sqrt{1-x^2}-\cos^{-1}x$
+    \vspace{\stretch{1}}
+    
+    \newpage
+    
+    \question $\displaystyle y=x\arcsin x+\sqrt{1-x^2}$
+    \vspace{\stretch{1}}
+    
+    \question A particle moves along the $x$-axis so that its position at any time $t\ge0$ is $x(t)=\arctan\sqrt{t}$. What is the velocity of the particle when $t=16$?
+    \vspace{\stretch{1}}
+\end{questions}
+
+
+\begin{tcolorbox}[title= DERIVATIVES OF THE EXPONENTIAL FUNCTION,colframe=black,sharp corners, colback=white, colbacktitle=white, coltitle=black, boxrule=1pt]
+    
+    Let $u$ be a differentiable function of $x$.
+    \begin{align*}
+        \frac{d}{dx}\left(e^u\right) &= u'\cdot e^u & \frac{d}{dx}\left(a^u\right) &= u'\cdot a^u\cdot\ln a
+    \end{align*}
+\end{tcolorbox}
+\vspace{.15cm}
+\textbf{Examples:}
+\begin{questions}
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=e^{\sin x}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=e^{(x+1)}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\cos\left(e^x\right)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=(1+2x)3^{-2x}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=e^{3^x}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=e^{x^2}e^{-x}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+\end{questions}
+
+\newpage
+
+\begin{tcolorbox}[title= DERIVATIVES OF THE LOGARITHMIC FUNCTION,colframe=black,sharp corners, colback=white, colbacktitle=white, coltitle=black, boxrule=1pt]
+    
+    Let $u$ be a differentiable function of $x$.
+    \begin{align*}
+        \frac{d}{dx}\left(\ln u\right) &= \frac{u'}{u} & \frac{d}{dx}\left(\log_a u\right) &= \frac{u'}{u\cdot\ln a}
+    \end{align*}
+\end{tcolorbox}
+\vspace{.15cm}
+\textbf{Examples:}
+\begin{questions}
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\ln(5x)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\ln(\cos x)$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\ln(\ln x)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\left(\ln x\right)^2$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\log_3(1+x\ln 3)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle y=\frac{1}{\log_2 x}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+\end{questions}
+
+Use properties of logarithms before differentiating to \textbf{make your life easier!}
+\begin{questions}
+    \question $\displaystyle\frac{d}{dx}\left[\ln\left(x\sqrt{x^2+1}\right)\right]=$
+    \vspace{\stretch{1}}
+    
+    \newpage
+    
+    \question $\displaystyle y=\ln\left(\tan\left(\frac{x-1}{x+1}\right)\right)$
+    \vspace{\stretch{1}}
+    
+\end{questions}
+

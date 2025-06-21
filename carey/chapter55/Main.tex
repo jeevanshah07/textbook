@@ -1,0 +1,140 @@
+\addcontentsline{toc}{subsection}{Sequences Basics}
+\subsection*{Sequences Basics}
+Mathematically, a \textbf{sequence} is defined as a function whose domain is the set of positive integers (or, as some might claim, the \textbf{natural numbers} $\mathbb{N}$). Although a sequence is a function, it is common to represent sequences by subscript notation.\\ \\
+Example:
+\begin{matrix}
+     1, & 2, & 3, & 4, & 5, & ... , & n, & ... & \hspace{.5in}\text{Each }a_{n}\text{ is a }\textbf{term}\text{ of the sequence}.\\
+     \Big\downarrow & \Big\downarrow & \Big\downarrow & \Big\downarrow & \Big\downarrow & \Big\downarrow & \Big\downarrow & \Big\downarrow &   \\
+     a_{1}, & a_{2}, & a_{3}, & a_{4}, & a_{5}, & ...\, , & a_{n}, & ...\, , & \hspace{.5in}\text{The number }a_{n}\text{ is called the }\textbf{nth term}.
+\end{matrix}\\
+\\
+\\
+
+%\vspace{.35in}
+
+\textbf{\textit{Finding Patterns}} Describe a pattern for each of the following sequences. Then use your description to write a formula for the $n$th term of each sequence. As $n$ increases, do the terms appear to be approaching a limit?\\ 
+
+\begin{parts}
+    \begin{minipage}{0.45\linewidth}
+        \part $1,\, \frac{1}{2},\, \frac{1}{4},\, \frac{1}{8},\, \frac{1}{16},\, ...$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $1,\, \frac{1}{2},\, \frac{1}{6},\, \frac{1}{24},\, \frac{1}{120},\, ...$
+    \end{minipage}
+    
+    \vspace{\stretch{.7}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \part $10,\, \frac{10}{3},\, \frac{10}{6},\, \frac{10}{10},\, \frac{10}{15},\, ...$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\frac{1}{4},\, \frac{4}{9},\, \frac{9}{16},\, \frac{16}{25},\, \frac{25}{36},\, ...$
+    \end{minipage}
+    
+    \vspace{\stretch{.7}}
+    
+    \begin{minipage}{0.45\linewidth}
+        \part $\frac{3}{7},\, \frac{5}{10},\, \frac{7}{13},\, \frac{9}{16},\, \frac{11}{19},\, ...$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part Let $\displaystyle a_{n}=\left\{\frac{4n}{3-2n}\right\}$. List out the first five terms, then estimate $\displaystyle\lim_{n\to\infty}a_{n}$.
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+    
+\end{parts}
+
+
+\newpage
+
+
+\begin{tcolorbox}[title= DEFINITION OF THE LIMIT OF A SEQUENCE,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    Let $L$ be a real number. The \textbf{limit} of a sequence $\{a_n\}$ is $L$, written as, 
+    \[\lim_{n\to\infty}a_n=L\]
+    if for each $\epsilon>0$, there exists $M>0$ such that $|a_n-L|<\epsilon$ whenever $n>M$. If the limit $L$ of a sequence exists, then the sequence \textbf{converges} to $L$. If the limit of a sequence does not exist, then the sequence \textbf{diverges}.
+
+\end{tcolorbox}
+\vspace{.1in}
+\noindent I know what you are thinking:  \textit{translation please!1??!?}\\
+\\
+\underline{Convergent}: When a sequence has a limit that approaches some real number $L$.
+
+\noindent\underline{Divergent}: A sequence that does \textit{not} have a limit.\\
+\\
+\noindent Possibilities:
+\begin{questions}
+    \question If $\displaystyle\lim_{n\to\infty}a_n=\infty$, then $\{a_n\}$ diverges to infinity.
+    \question If $\displaystyle\lim_{n\to\infty}a_n=-\infty$, then $\{a_n\}$ diverges to negative infinity.
+    \question If $\displaystyle\lim_{n\to\infty}a_n=L$, a real finite number, then $\{a_n\}$ converges to $L$.
+    \question If $\displaystyle\lim_{n\to\infty}a_n$ oscillates between two fixed numbers, then $\{a_n\}$ diverges by oscillation.
+\end{questions}
+
+\vspace{1cm}
+
+\noindent\textbf{Example}: Does the sequence $\displaystyle a_{n}=\left\{\frac{\ln\sqrt{n}}{n}\right\}$ converge or diverge? If convergent, where to?
+
+\newpage
+
+As we just saw, L'Hopital's Rule becomes a very important part of determining convergence of \textit{interesting} sequences.
+
+
+\begin{tcolorbox}[colframe=black,sharp corners,colback=white,boxrule=.25mm]
+    Some Important Limits to Know:
+    \begin{itemize}
+    
+        \item[] $\displaystyle\lim_{n\to\infty}\frac{c}{n}=$ \vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}\frac{\ln{n}}{n}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}\sqrt[n]{n}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}x^{n}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}x^{\frac{1}{n}}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}\left(1+\frac{x}{n}\right)^{n}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}\frac{x^{n}}{n!}=$\vspace{.15in}
+        \item[] $\displaystyle\lim_{n\to\infty}\frac{n!}{x^n}=$\vspace{.15in}
+        
+    
+    
+    \end{itemize}
+    
+
+\end{tcolorbox}
+\vspace{.1in}
+\noindent\textbf{Examples:}\\
+Determine whether the following sequences converge or diverge.
+\begin{parts}
+
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle\frac{1}{2},\,\frac{2}{3},\,\frac{3}{4},\,\frac{4}{5},\,...$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle\frac{1}{2},\,\frac{1}{4},\,\frac{1}{8},\,\frac{1}{16},\,...$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle a_{n}=3+(-1)^n$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+        
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle a_{n}=\frac{n}{1-2n}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle a_{n}=\frac{\ln n}{n}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle a_{n}=\frac{n!}{(n+2)!}$
+    \end{minipage}
+    
+    \vspace{\stretch{1}}
+
+
+\end{parts}
+
+\newpage

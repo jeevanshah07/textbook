@@ -1,0 +1,45 @@
+\addcontentsline{toc}{subsection}{Differentiating and Integrating Power Series}
+\subsection*{Differentiating and Integrating Power Series}
+\begin{tcolorbox}[title= PROPERTIES OF FUNCTIONS DEFINED BY POWER SERIES,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    If the function given by
+    \begin{align*}
+        f(x) &= \sum_{n=0}^{\infty}a_n (x-c)^n\\
+        &= a_0 + a_1 (x-c)+a_2 (x-c)^2+a_3 (x-c)^3+\cdots+a_n (x-c)^n+\cdots
+    \end{align*}
+    has radius of convergence $R>0$, then, on the interval $(c-R,\,c+R)$, $f$ is differentiable (and therefore continuous). Moreover, the derivative and antiderivative of $f$ are as follows.
+    
+    
+        \begin{align*}
+            1.\hspace{.15in} f'(x) &= \sum_{n=0}^{\infty}na_n (x-c)^{n-1}\\
+        &= a_1 + 2a_2 (x-c)+3a_3 (x-c)^2+4a_4 (x-c)^3+\cdots
+        \end{align*}
+        \begin{align*}
+            2.\hspace{.15in}\int f(x)\,dx &= C+\sum_{n=0}^{\infty} a_n\frac{(x-c)^{n+1}}{n+1}\\
+            &= C + a_0 (x-c)+ a_1\frac{(a-c)^2}{2}+a_2\frac{(x-c)^3}{3}+\cdots
+        \end{align*}
+    
+    The \textit{radius of convergence} of the series obtained by differentiating or integrating a power series is the same as the original series. The \textit{interval of convergence}, however, may differ because of the behavior of the end points.
+    
+\end{tcolorbox}
+\vspace{.1cm}
+
+Consider the function given by $\displaystyle f(x)=\sum_{n=1}^{\infty}\frac{x^n}{n}=x+\frac{x^2}{2}+\frac{x^3}{3}+\cdots$. Find the interval of convergence for each of the following:
+\begin{parts}
+
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle f(x)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $f'(x)$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+        \part $\displaystyle\int f(x)\,dx$
+    \end{minipage}
+
+\end{parts}
+
+
+\newpage

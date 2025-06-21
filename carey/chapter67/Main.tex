@@ -1,0 +1,51 @@
+\addcontentsline{toc}{subsection}{Radius and Interval of Convergence}
+\subsection*{Radius and Interval of Convergence}
+A power series in $x$ can be thought of as a function of $x$
+\[f(x)=\sum_{n=0}^{\infty}a_n (x-c)^n\]
+where the \textbf{domain of \textit{f}} is the set of all $x$ values for which the power series converges. The main goal of this section will be to determine where and when that happens.
+
+
+\begin{tcolorbox}[title= CONVERGENCE OF A POWER SERIES,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    For a power series centered at $c$, precisely one of the following is true.
+    
+    \begin{enumerate}
+        \item The series converges only at $c$.
+        \item There exists a real number $R>0$ such that the series converges absolutely for $|x-c|<R$, and diverges for $|x-c|>R$.
+        \item The series converges absolutely for all $x$.
+    \end{enumerate}
+    The number $R$ is called the \textbf{radius of convergence} of the power series. If the series converges only at $c$, the radius of convergence is $R=0$, and if the series converges for all $x$, then the radius is $R=\infty$. The set of all values of $x$ for which the series converges is called the \textbf{interval of convergence} of the power series.
+
+\end{tcolorbox}
+\vspace{.1in}
+
+
+\noindent\textbf{Examples:} Find the Radius of Convergence.
+\begin{questions}
+    \question $\displaystyle\sum_{n=0}^{\infty}n!x^n$
+    \vspace{\stretch{1}}
+    \question $\displaystyle\sum_{n=0}^{\infty}3(x-2)^n$
+    \vspace{\stretch{1}}
+    \question$\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$
+    \vspace{\stretch{1}}
+    
+
+\end{questions}
+
+\newpage
+
+
+\noindent\textbf{Endpoint of Convergence}: When $R$ is a finite value (such as in example 2 from the previous page), our theorem about convergence of power series never specifies what happens at the endpoints. As a result, they must be tested separately.\\
+\\
+\noindent\textbf{Examples:} Find the interval of Convergence.
+\begin{questions}
+    \question $\displaystyle\sum_{n=1}^{\infty}\frac{x^n}{n}$
+    \vspace{\stretch{1}}
+    
+    \question$\displaystyle\sum_{n=1}^{\infty}\frac{x^n}{n^2}$
+    \vspace{\stretch{1}}
+\end{questions}
+
+\newpage
+
+

@@ -1,0 +1,43 @@
+\addcontentsline{toc}{subsection}{The Definite Integral as Area Under the Curve}
+\subsection*{The Definite Integral as Area Under the Curve}
+
+\begin{center}
+\begin{tikzpicture}[xscale=1.3,yscale=.65,declare function={f(\x)=((1/3)*(\x)^(3)-3*(\x)^(2)+8*\x-3;}]
+\coordinate (start) at (.8,{f(.8)});
+\coordinate (x0) at (1,{f(1)});
+\coordinate (x1) at (2,{f(2)});
+\coordinate (x2) at (3,{f(3)});
+\coordinate (x3) at (4,{f(4)});
+\coordinate (x4) at (5,{f(5)});
+\coordinate (end) at (5.05,{f(5.05)});
+
+\draw [-latex] (-0.5,0) -- (6,0) node (xaxis) [below] {$x$};
+\draw [-latex] (0,-0.5) -- (0,5) node [left] {$y$};
+\foreach \x/\xtext in {1/a , 5/b }
+ \draw[xshift=\x cm] (0pt,3pt) -- (0pt,0pt) 
+node[below=2pt,fill=white,font=\normalsize]
+  {$\xtext$};
+\draw[domain=.5:5.3,samples=200,variable=\x,<->,thick] plot ({\x},{f(\x)}); \end{tikzpicture}
+\end{center}
+
+The area under the curve can be estimated using $\displaystyle S_n=\sum_{k=1}^n f\left(c_k\right)\cdot\Delta x_k$, a Riemann sum for $f$ on the interval $[a,\,b].$
+
+\begin{tcolorbox}[title= LIMIT DEFINITION OF THE DEFINITE INTEGRAL,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black,boxrule=1pt]
+
+     Let $f$ be continuous on $[a,\,b]$, and let $[a,\,b]$ be partitioned into $n$ subintervals of equal length $\displaystyle \Delta x=\frac{b-a}{n}$. Then the definite integral of $f$ over $[a,\,b]$ is given by
+     \[\lim_{n\to\infty}\sum_{k=1}^n f\left(c_k\right)\Delta x,\]
+     where each $c_k$ is chosen arbitrarily in the $k^{\text{th}}$ subinterval.
+    
+\end{tcolorbox}
+
+\noindent\textbf{Think!} Interpret the above definition and translate into less "mathy" talk:
+\vspace{\stretch{.6}}
+
+%actually build out this section and add more examples/explanations/etc.
+
+\textbf{Using the Notation}\\
+The interval $[-1,\,3]$ is partitioned into $n$ subintervals of equal length $\Delta x=4/n$. Let $m_k$ denote the midpoint of the $k^{\text{th}}$ subinterval. Express the limit $\displaystyle\lim_{n\to\infty}\sum_{k=1}^n \left( 3\left(m_l\right)^2-2m_k +5 \right)\Delta x$ as an integral.
+\vspace{\stretch{.5}}
+
+\newpage
+

@@ -1,0 +1,63 @@
+\addcontentsline{toc}{subsection}{Integration of Trigonometric Functions}
+\subsection*{Integration of Trigonometric Functions}
+Before we begin, let's check out the list of basic trig integrals that you should have memorized (these are just derivatives in reverse, so nothing new here).
+
+\begin{tcolorbox}[title= INTEGRALS OF BASIC TRIG FUNCTIONS,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black,boxrule=1pt]
+
+    \begin{align*}
+        \int\sin x\,dx &= -\cos x+C & \int\csc^2 x\,dx &= -\cot x+C\\
+        \int\cos x\,dx &= \sin x+C & \int\sec x\tan x\,dx &= \sec x+C\\
+        \int\sec^2 x\,dx &= \tan x+C & \int\csc x\cot x\,dx &= -\csc x+C
+    \end{align*}
+    \vspace{.05cm}
+\end{tcolorbox}
+Also... you are going to need to know a lot of trig identities.
+
+\noindent\textbf{Examples:} Where possible, try rewriting using trig identities before integrating.
+\begin{questions}
+    \question $\displaystyle\int\frac{1}{\cos^2 x}\,dx$
+    \vspace{\stretch{1}}
+    
+    \question $\displaystyle\int\frac{\sin x}{\tan x}\,dx$
+    \vspace{\stretch{1}}
+    
+    
+    The following examples require \textbf{Integration by Substitution}. The key to doing these problems is learning when the angle should be chosen as $u$ or when to let the entire trig function be $u$.
+    
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle\int\cos(2x)\,dx$    
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \question $\displaystyle\int\frac{\sin x}{\cos^2 x}\,dx$
+    \end{minipage}
+    
+    \vspace{\stretch{1.2}}
+    
+    \newpage
+    
+    \question $\displaystyle\int 16x\sin^3\left(2x^2+1\right)\cos\left(2x^2+1\right) \,dx$
+    \vspace{\stretch{1}}
+\end{questions}
+
+\begin{tcolorbox}[title= INTEGRAL OF SECANT AND COSECANT,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black,boxrule=1pt]
+
+    \[\displaystyle\int\sec u\,du=\ln|\sec u+\tan u|+C \hspace{.6in}\int\csc u\,du=-\ln|\csc u + \cot u|+C\]
+    
+\end{tcolorbox}
+You \textbf{have} to memorize these. The algebraic trick to do the integration by hand is more annoying to remember than just having this formula ingrained in your memory.
+
+\begin{questions}
+    \question $\displaystyle \int 7x\sec(x^2)\,dx$
+    
+    \vspace{\stretch{1}}
+    
+    \question $\displaystyle \int \frac{\cos x+\sin x}{\tan x}\,dx$
+    
+    \vspace{\stretch{1}}
+\end{questions}
+
+
+
+
+\newpage

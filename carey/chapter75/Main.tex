@@ -1,0 +1,68 @@
+\addcontentsline{toc}{subsection}{Vector Functions and Motion}
+\subsection*{Vector Functions and Motion}
+Parametric, Vector, and (eventually) Polar are all essentially the same. In this section, we introduce the form of a vector valued function, but you will see how it is essentially the same as a parametric one.
+
+\begin{tcolorbox}[colframe=black,sharp corners,colback=white,boxrule=.25mm]
+    \begin{center}
+        \textbf{The Essentials}
+    \end{center}
+    
+    \vspace{.7cm}
+    
+    If $\displaystyle\vec{r}(t)=\langle x(t),\,y(t)\rangle$ is the position vector of a particle moving along a smooth curve in the $xy$-plane, then, at any time $t$,
+    \begin{enumerate}
+        \item The particle's \textbf{velocity vector} $\displaystyle\vec{v}(t)=\langle x'(t),\,y'(t)\rangle$; if drawn from the position point, it is tangent to the points in the direction of increasing $t$.
+        
+        \item The particle's \textbf{speed} along the curve is the length (magnitude) of the velocity vector: \[\displaystyle\left|\vec{v}(t)\right|=\sqrt{x'(t)^2 +y'(t)^2}.\]
+        
+        \item The particle's \textbf{acceleration vector} $\displaystyle\vec{a}(t)=\langle x''(t),\,y''(t)\rangle$, is the derivative of the velocity vector and the second derivative of the position vector.
+    \end{enumerate}
+    
+    \vspace{.5cm}
+    
+    If $\displaystyle\vec{v}(t)=\langle x'(t),\,y'(t)\rangle$ is the velocity vector of a particle moving along a smooth curve in the $xy$-plane, then
+    \begin{enumerate}
+        \item The \textbf{displacement} from $t=a$ to $t=b$ is given by the vector:
+        \[\left\langle\int_a^b x'(t)\,dt,\,\int_a^b y'(t)\,dt\right\rangle\]
+        The proceeding vector is added to the position at time $t=a$ to get the position at time $t=b$.
+       
+        \item The \textbf{distance traveled} from $t=a$ to $t=b$ is given by
+        \[\int_a^b \left|\vec{v}(t)\right|\,dt=\int_a^b \sqrt{(x'(t))^2+(y'(t))^2}\,dt\]
+        Note that this is just arc length for a parametric curve.
+    \end{enumerate}
+    
+    
+\end{tcolorbox}
+
+\noindent\textbf{Examples:}
+\begin{questions}
+    \question A particle moves in the $xy$-plane so that at any time $t$, the position of the particle is given by $x(t)=t^3+2t^2,\,y(t)=t^4-t^3$.
+    \begin{parts}
+        \begin{minipage}[t]{.45\linewidth}
+            \part Find the velocity vector when $t=1$.
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.45\linewidth}
+            \part Find the $\vec{a}(t)$ when $t=2$.
+        \end{minipage}
+    \end{parts}
+
+
+    \newpage
+
+    \question A particle moves in the $xy$-plane so that at any time $t$, $t\ge0$, the position of the particle is given by $x(t)=t^2+3t,\,y(t)=t^3-3t^2$. Find the magnitude of the velocity vector when $t=1$.
+    
+    \vspace{\stretch{1}}
+
+    \question A particle moves in the $xy$-plane so that its position is given by \[\displaystyle\vec{r}(t)=\left\langle\sqrt{3}-4\cos t,\,1-2\sin t\right\rangle,\]where $0\le t\le2\pi$. The path of the particle intersects the $x$-axis twice. Write an expression that represents the distance traveled by the particle between the two $x$-intercepts. Do no evaluate.
+    
+    \vspace{\stretch{1}}
+    
+    \question A particle moves with a velocity vector of $\langle3t^2-4t,\,8t^3+5\rangle.$ If the position vector at $t=0$ is $\langle7,\,-4\rangle$, find the position of the particle at $t=1$.
+    
+    \vspace{\stretch{1}}
+    
+\end{questions}
+
+
+\newpage

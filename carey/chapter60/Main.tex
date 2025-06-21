@@ -1,0 +1,64 @@
+\addcontentsline{toc}{subsection}{Comparison of Series}
+\subsection*{Comparison of Series}
+
+
+One motif of the series (which you probably didn't notice) that we have been looking at is that they are relatively simple. However, with any slight complications, we can no longer apply the tests in our arsenal. For example:
+
+\begin{enumerate}
+    \item $\displaystyle\sum_{n=0}^\infty\frac{1}{2^n}$ is geometric, but $\displaystyle\sum_{n=0}^{\infty}\frac{n}{2^n}$ is not.
+    \item $\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^3}$ is a $p$-series, but $\displaystyle\sum_{n=1}^\infty\frac{1}{n^3+1}$ is not.
+    \item $\displaystyle a_n=\frac{n}{(n^2+3)^2}$ is easily integrated, but $\displaystyle b_n=\frac{n^2}{(n^2+3)^2}$ is not.
+\end{enumerate}
+
+\vspace{.07in}
+
+\begin{tcolorbox}[title= THE DIRECT COMPARISON TEST,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    Let $0<a_n\le b_n$ for all $n$.\\
+    \begin{enumerate}
+        \item If $\displaystyle\sum_{n=1}^\infty b_n$ converges, then $\displaystyle\sum_{n=1}^\infty a_n$ converges.
+        \item If $\displaystyle\sum_{n=1}^\infty a_n$ diverges, then $\displaystyle\sum_{n=1}^\infty b_n$ diverges.
+    \end{enumerate}
+
+\end{tcolorbox}
+\vspace{.07in}
+\noindent\textbf{THREE IMPORTANT FACTS}:
+\begin{questions}
+    \question Your comparison does not always have to be greater than or equal to $a_n$, just as long as it is \textbf{ultimately} greater than (or less than) the original.
+    \question To prove a series is convergent, your comparison must be \textbf{larger}.
+    \question To prove a series is divergent, your comparison must be \textbf{smaller}.
+\end{questions}
+
+\noindent\textbf{Examples:} Determine the convergence or divergence of each series.
+\begin{parts}
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^\infty \frac{1}{2+3^n}$
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\linewidth}
+        \part $\displaystyle\sum_{n=1}^\infty \frac{1}{2+\sqrt{n}}$
+    \end{minipage}
+\end{parts}
+
+\newpage
+
+\begin{tcolorbox}[title= THE LIMIT COMPARISON TEST,colframe=black,sharp corners,colback=white,colbacktitle=white,coltitle=black]
+
+    Suppose that $a_n>0,\,b_n>0$, and
+    \[\lim_{n\to\infty}\left(\frac{a_n}{b__n}\right)=L\]
+    where $L$ is \textit{finite} and \textit{positive}. Then the two series $\displaystyle\sum a_n$ and $\displaystyle\sum b_n$ either both converge or both diverge.
+
+\end{tcolorbox}
+\vspace{.1in}
+\noindent\textbf{Examples: Using the Limit Comparison Test}\\
+Determine the convergence or divergence of $\displaystyle\sum_{n=1}^{\infty}\frac{\sqrt{n}}{n^2+1}$.
+\vspace{\stretch{1}}
+
+
+Determine the convergence or divergence of $\displaystyle\sum_{n=1}^\infty\frac{n2^n}{4n^3+1}$.
+\vspace{\stretch{1}}
+
+
+
+
+\newpage

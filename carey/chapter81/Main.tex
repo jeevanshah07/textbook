@@ -1,0 +1,89 @@
+\addcontentsline{toc}{subsection}{Definitions and Theorems}
+
+\begin{multicols}{2}
+
+\small
+
+\RaggedRight
+
+\entry{Continuity}{A function $f(x)$ is continuous at $x=a$ if all of the following are true: (i) $f(a)$ exists (ii) $\lim_{x\to a}f(x)$ exists (iii) $\lim_{x\to a}f(x)=f(a)$.}
+
+\entry{Intermediate Value Theorem}{If function $f(x)$ is continuous on a closed interval $[a,\,b]$ and if $y$ is any number between $f(a)$ and $f(b)$, then there is at least one number $c\in[a,\,b]$ such that $f(c)=y$.}
+
+\entry{Limit Theorem}{$\lim_{x\to a}f(x)=L$ if and only if $\lim_{x\to a^+}f(x)=L=\lim_{x\to a^-}f(x)$.}
+
+\entry{Squeeze Theorem}{If $f(x)\le g(x)\le h(x)$ and $\lim_{x\to c}f(x)=\lim_{x\to c}h(x)=L$, then $\lim_{x\to c}g(x)=L)$.}
+
+\entry{Definition of Derivative}{$f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}$ or $f'(x)=\lim_{x\to c}\frac{f(x)-f(c)}{x-c}$.}
+
+\entry{Diff. - Cont. Theorem}{If a function is differentiable at $x=a$, then it is continuous at $x=a$.}
+
+\entry{Mean Value Theorem}{If $f(x)$ is continuous on the closed interval $[a,\,b]$ and differentiable on the open interval $(a,\,b)$, then there is at least one number $c$ between $a$ and $b$ such that $f'(c)=\frac{f(b)-f(a)}{b-a}$.}
+
+\entry{Average Value Theorem}{The average value of $f$ on $[a,\,b]$ is: $f_ave=\frac{1}{b-a}\int_a^b f(x)\,dx$.}
+
+\entry{Derivative of Inverse}{$g'(c)=\frac{1}{f'(g(c))}$.}
+
+\entry{Linearization}{$L(x)=f(a)+f'(a)(x-a)$.}
+
+\entry{Critical Point}{A number $c$ in the domain of a function $f$ is a critical point of $f$ if either $f'(c)=0$ or DNE.}
+
+\entry{Extrema}{Critical points that are either a local/absolute max/min.}
+
+\entry{Point of Inflection}{Points of inflection of $f(x)$ are the point on the domain of $f$ where $f''(x)=0$ or DNE and $f''$ changes sign at that point.}
+
+\entry{Extreme Value Theorem}{If $f$ is continuous on a closed interval $[a,\,b]$, then $f$ has both an absolute max and absolute min value on $[a,\,b]$.}
+
+\entry{Fundamental Theorem of Calculus}{$\int_a^b f(x)\,dx=F(b)-F(a)$ and $\frac{d}{dx}\int_a^x f(t)\,dt=f(x)$.}
+
+\entry{Position}{$s(t)=\int v(t)\,dt$.}
+
+\entry{Velocity}{$v(t)=s'(t)$ or $v(t)=\int a(t)\,dt$.}
+
+\entry{Acceleration}{$a(t)=v'(t)=s''(t)$.}
+
+\entry{Speed}{$\text{Speed}=\|v(t)|=\sqrt{(x'(t))^2+(y'(t))^2}$. Speed increases when $v(t)$ and $a(t)$ have the same sign. Speed decreases when $v(t)$ and $a(t)$ have different signs.}
+
+\entry{Total Distance}{Total Distance from time $a$ to $b$ is $\int_a^b |v(t)|\,dt$.}
+
+\entry{Net Distance (Change)}{$\int _a^b v(t)\,dt$.}
+
+\entry{Area in the Plane}{$A=\int_a^b(f(x)-g(x))\,dx$ where $f\ge g$ on $[a,\,b]$.}
+
+\entry{Volume by Disks}{$V=\pi\int_a^b R^2\,dx$ (horizontal) or $V=\pi\int_c^d R^2\,dy$ (vertical).}
+
+\entry{Volume by Washers}{$V=\pi\int_a^b (R^2-r^2)\,dx$ (horizontal) or $V=\pi\int_c^d (R^2-r^2)\,dy$ (vertical).}
+
+\entry{Volume by Cross Sections}{$V=\pi\int_a^b A(x)\,dx$ (if perpendicular to $x$-axis) or $V=\pi\int_c^d A(y)\,dy$ (if perpendicular to $y$-axis).}
+
+\entry{Arc Length}{$L=\int_a^b\sqrt{1+[f'(x)]^2}\,dx$ or $L=\int_c^d\sqrt{1+[f'(y)]^2}\,dy$.}
+
+\entry{L'Hospital's Rule}{If $\lim_{x\to c}\frac{f}{g}$ is of the form $0/0$ or $\infty/\infty$, then $\lim_{x\to c}\frac{f}{g}=\lim_{x\to c}\frac{f'}{g'}$.}
+
+\entry{Improper Integrals}{An integral $\int_a^b f(x)\,dx$ is improper if any bound is infinite or $f$ has at least one discontinuity on the interval $[a,\,b]$. Evaluate using limits.}
+
+\entry{Parametric Slope}{$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}$.}
+
+\entry{Parametric 2nd Deriv.}{$\frac{d^2 y}{dx^2}=\frac{\frac{d}{dx}(dy/dx)}{dx/dt}$.}
+
+\entry{Parametric Arc Length}{$L=\int_a^b\sqrt{[x'(t)]^2+[y'(t)]^2}\,dx$.}
+
+\entry{Polar Slope}{$\frac{dy}{dx}=\frac{r\cos\theta+r'\sin\theta}{-r\sin\theta+r'\cos\theta}$.}
+
+\entry{Polar Area}{$A=\frac{1}{2}\int_a^b r^2\,d\theta$ or $A=\frac{1}{2}\int_a^b (f(\theta))^2\,d\theta$.}
+
+\entry{Area Between Polar Curves}{$A=\frac{1}{2}\int_a^b [R^2-r^2]\,d\theta$.}
+
+\entry{Vector Position}{$s(t)=\langle x(t),\,y(t)\rangle$.}
+
+\entry{Vector Velocity}{$v(t)=s'(t)=\langle x'(t),\,y'(t)\rangle$.}
+
+\entry{Vector Acceleration}{$a(t)=v'(t)=s''(t)=\langle x''(t),\,y''(t)\rangle$.}
+
+\entry{Vector Speed}{$|v(t)|=\sqrt{(x't)^2+(y'(t))^2}$.}
+
+
+\end{multicols}
+
+\vspace{.5 in}
+
