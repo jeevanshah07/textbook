@@ -1,0 +1,180 @@
+\subsection{Basic Number Theory}
+\subsubsection{Basics and Definitions}
+Lets begin with the basics.
+
+\begin{definition}{The Integers}{}
+    The set of integers, represented $\ZZ$, contains all whole numbers, positive and negative. Symbolically, $\ZZ = \braces{\dots, -3, -2, -1, 0, 1, 2, 3, \dots}$
+\end{definition}
+
+\begin{definition}{The Rational Numbers}{}
+    The set of integers, represented $\QQ$, contains all numbers that can be represented as fractions. Symbolically, $\QQ = \braces{\frac{m}{n} \mid m, n \in \ZZ\left(n \neq 0\right)}$
+\end{definition}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}
+    Every integer is a rational number.
+\end{theorem}
+\begin{proof}
+    Trivial.
+\end{proof}
+\end{tcolorbox}
+
+\begin{definition}{Even and Odd Numbers}{}
+    A number is \textbf{even} if, and only if, it is some multiple of $2$. Symbolically, $n$ is even $\Leftrightarrow n=2k$ for some $k \in \ZZ$. A number if \textbf{odd} if, and only if, it is some multiple of $2$ plus $1$. Symbolically, $n$ is odd $\Leftrightarrow n=2k+1$ for $k\in\ZZ$.
+\end{definition}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}{\label{thm:3.1}}
+    All integers are either even or odd
+\end{theorem}
+\begin{proof}
+    Theorem~(\ref{thm:3.1})~will be proved later in the section.
+\end{proof}
+\end{tcolorbox}
+
+\begin{definition}{Prime and Composite Numbers}{}
+    A number is \textbf{prime} if, and only if, its only divisors are $1$ and itself. In other words, $n$ is prime $\Leftrightarrow \forall p, q \in \ZZ, \hspace{0.1cm} n=pq \Rightarrow p=n \lor q=n$. A number is \textbf{composite} if, and only if, it has more divisors than $1$ and itself. Symbolically, $n$ is composite $\Leftrightarrow \exists \hspace{0.1cm} pq \in \ZZ$ such that $n=pq$ and neither $p$ nor $q$ equal $n$. 
+\end{definition}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}
+    $1$ is neither prime nor composite.
+\end{theorem}
+\begin{proof}
+    Trivial.
+\end{proof}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=orange!70]
+\begin{lemma}
+    Every integer except $1$ is either prime or composite. 
+\end{lemma}
+\begin{proof}
+    The proof is left as an exercise to the reader.
+\end{proof}
+\end{tcolorbox}
+
+\begin{question}{Sum of two rational numbers}{}
+    Is the sum of two rational numbers also a rational number? Prove or give a counter example.
+\end{question}
+
+\begin{fact}{Closure}{}
+    For those who are familiar with abstract algebra and set theory, given by the results of the previous question. Since the sum of two rational numbers is also rational we can say that the rational numbers are \textbf{closed} under the operation of addition. Symbolically: $\forall m, n \in \QQ, \hspace{0.1cm} m + n \in \QQ$. All this means is that for every two rational numbers, their sum is also a rational number. 
+\end{fact}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}{\label{thm:intclosure}}
+    The set of integers is closed under addition, subtraction, and multiplication.
+\end{theorem}
+\begin{proof}
+    Trivial
+\end{proof}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}{\label{thm:qqclosure}}
+    The set of rational numbers is closed under addition, multiplication, subtraction.
+\end{theorem}
+\begin{proof}
+    Let $m, n \in \QQ$. Then $m = \frac{a}{b}$ and $n = \frac{c}{d}$ for $a, b, c, d \in ZZ$ with $b, d \neq 0$.\\
+    \hspace*{2em}{\underline{Closure under addition:}} It follows that, 
+    \begin{align*}
+        m + n &= \frac{a}{b} + \frac{c}{d} \\
+        &= \frac{a}{b}\left(\frac{d}{d}\right) + \frac{c}{d}\left(\frac{b}{b}\right) \\
+        &= \frac{ad}{bd} + \frac{bc}{bd} \\
+        &= \frac{ad + bd}{bd}
+    \end{align*}
+    Since, $b \neq 0$ and $d \neq 0$, $bd \neq$. It follows from Theorem~(\ref{thm:intclosure})~that $ad + bd \in ZZ$ and $bd \in ZZ$ so by definition of $\QQ$, $m +n \in \QQ$. \\
+
+    \hspace*{2em} \underline{Closure under subtraction:} It follows that,
+    \begin{equation*}
+        m - n = \frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}
+    \end{equation*}
+    Following the logic as above, $\frac{ad - bc}{bd} \in \QQ \Rightarrow m - n \in \QQ$ \\
+    \hspace*{2em} \underline{Closure under multiplication:} It follows that, 
+    \begin{equation*}
+        mn = \left(\frac{a}{b}\right)\left(\frac{c}{d}\right) = \frac{ac}{bd}
+    \end{equation*}
+    Since, $ac \in \ZZ$ and $bd \in \ZZ \setminus {0}$, we have that $\frac{ac}{bd} = mn \in \QQ$ by definition of $\QQ$. \\
+    Thus we have shown that $\QQ$ is closed under addition, subtraction, and multiplication.
+\end{proof}
+\end{tcolorbox}
+
+\begin{note}{$\QQ$ closed under division}{}
+    Eagle eyed readers might have noticed that Theorem~(\ref{thm:qqclosure})~does not mention division. This obviously because $0 \in \QQ$ and you cannot divide by $0$. Thus, in order for the rational numbers to be closed under all four operations we must exclude $0$ to create the set $\QQ \setminus \braces{0}$. 
+\end{note}
+
+\subsubsection{Divisibility}
+
+\begin{definition}{Divisibility}{}
+    Let $m$ and $n$ be integers. Then $m$ divides $n$ if, and only if, $n = md$ for some $d \in \ZZ$. Symbolically, $m \mid n \Leftrightarrow n = md$, which is read `$m$ divides $n$'. The notation $\nmid$ means `does not divide'.
+\end{definition}
+
+\begin{example}{Basic Divisibility Examples}{divisibility}
+    \begin{enumerate}
+        \item $2 \mid 4$ since $4 = 2k$ for $k \in \ZZ$ (obviously $k=2$)
+        \item $3 \mid 9$ since $9 = 3k$ for $k \in \ZZ$
+        \item $2 \mid n \Leftrightarrow n$ is even
+        \item $2 \nmid n \Leftrightarrow n$ is odd
+    \end{enumerate}
+\end{example}
+
+\begin{question}{Divisibility Proofs}{}
+    Prove the final two statements from example~(\ref{th:divisibility})
+\end{question}
+
+\begin{tcolorbox}[colback=pink!70]
+\begin{theorem}[Quotient-Remainder Theorem]
+    Let $n \in \ZZ$ and $d \in \ZZ^{+}$. Then 
+    \begin{equation*}
+        n = qd + r
+    \end{equation*}
+    where $0 \leq r < d$ for unique integers $q$ and $r$.
+\end{theorem}
+\end{tcolorbox}
+
+\begin{question}{Application of the Quotient Remainder Theorem}{}
+    Given the following values of $n$ and $d$, find unique integers $q$ and $r$ such that $n = qd + r$ where $0 \leq r < d$:
+    \begin{questions}
+        \question{$n = 56$ and $d = 3$}
+        \question{$n = 100$ and $d = 7$}
+        \question{$n = 3$ and $d=2$}
+    \end{questions}
+\end{question}
+
+\begin{definition}{$\bmod$ and $\intdiv$}{}
+    Let $n \in \ZZ$ and $d \in \ZZ^{+}$ such that $n = qd + r$ where $q$ and $r$ are unique integers and $0 \leq r < d$. Then $n \intdiv d = q$ and $n \bmod d = r$.
+\end{definition}
+
+\begin{note}{}{}
+    Note that the following is true:
+    \begin{equation*}
+        m \bmod n = r \Leftrightarrow m \equiv r \pmod{n}
+    \end{equation*}
+\end{note}
+
+If you've ever programmed before the $\intdiv$ should remind you an awful lot of the idea of integer division in programming languages. As well, another easy connection to draw should be that $\bmod$ simply just returns the remainder of $n/d$ which is why $r$ must be bounded between $0 \leq r < d$. With these new ideas (mainly $\bmod$) we can extend our definition of divisibility to look like the following:
+\begin{equation*}
+    m \mid n \Leftrightarrow n = md \Leftrightarrow m \bmod n = 0 \Leftrightarrow m \equiv 0 \pmod{n}
+\end{equation*}
+Given $m, n, d \in \ZZ$ such that $n = md$
+
+\subsubsection{Theorems and such}
+Due to the structuring of this section and my lack of planning I've decided that this is the perfect section to talk about and prove some interesting theorems related to basic number theory. For more advanced readers I encourage you to try to write out your own proof before looking at the written one. \\
+Before getting into the first theorem we must start with a new definition:
+\begin{definition}{Parity}{}
+    The \textbf{parity} of an integer refers to wether it is even or odd. $5$ has an odd parity while $90$ has an even parity.
+    The fact that any integer is either even or odd is known as the \textbf{parity property}
+\end{definition}
+
+\begin{tcolorbox}[colback=pink!70]
+    \begin{theorem}
+        Consecutive integers have opposite parity.
+    \end{theorem}
+    \begin{proof}
+        Let $x \in \ZZ$. Then by the parity property, $x$ is either even or odd. \\
+        \hspace*{2em}\underline{$x$ is even:} Assume $x$ is even. Then by definition of even numbers, $x = 2n$ for some $n \in \ZZ$. Then $x+1 = 2n+1$ which is odd by defintion of odd numbers. It follows that $x$ and $x+1$ have opposite parities.  \\
+        \hspace*{2em}\underline{$x$ is odd:} Assume $x$ is odd. Then by defintion of odd numbers, $x = 2n+1$ for some $n\in\ZZ$. Then, $x+1 = (2n + 1) + 1 = 2n + 2 = 2(n + 1)$. Since the integers are closed under addition and multiplication (see~\ref{thm:intclosure}), $n+1$ is an integers, and thus $x+1$ is even since it is of the form $2k$ where $k \in \ZZ$. It follows that $x$ and $x+1$ has opposite parities. \\
+        Thus, regardless of if any given integer is even or odd, the next consecutive integer will be of opposite parity.
+    \end{proof}
+\end{tcolorbox}

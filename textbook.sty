@@ -1,6 +1,8 @@
 \ProvidesPackage{textbook}
 
 \usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{fix-cm}
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{tcolorbox}
@@ -12,7 +14,7 @@
 \usepackage{hyperref}
 \usepackage{nameref}
 \usepackage{array}
-\usepackage{gensymb}
+\usepackage{amssymb}
 \usepackage{import}
 
 \pgfplotsset{compat=1.18}
@@ -28,8 +30,8 @@
 
 \hypersetup{
     colorlinks=true,
-    linktoc=subsection,
-    linkcolor=black,}
+    linktoc=section,
+    linkcolor=blue,}
 
 %=============================================
         %POINTS FORMATTING
@@ -77,5 +79,7 @@
 {colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
 
 \newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}{Corollary}[section]
+
+\DeclareMathOperator{\intdiv}{div}

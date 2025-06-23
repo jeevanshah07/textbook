@@ -12,6 +12,10 @@
 \contentsline {subsection}{\numberline {2.4}Homomorphisms}{9}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Quotient Groups}{10}{subsection.2.5}%
 \contentsline {section}{\numberline {3}Discrete Mathematics}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Relations}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Equivalence Relations}{12}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Equivalence Classes}{13}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.1}Basic Number Theory}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Basics and Definitions}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Divisibility}{13}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Theorems and such}{14}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Relations}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Equivalence Relations}{16}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Equivalence Classes}{17}{subsubsection.3.3.1}%
