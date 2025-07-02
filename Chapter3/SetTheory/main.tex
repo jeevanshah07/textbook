@@ -1,0 +1,67 @@
+\subsection{Basic Set Theory}
+\subsubsection{Basics and Definitions}
+
+\begin{definition}{Sets and Elements}{}
+    A set, $S$, is a collection of objects. Sets are notated using curly braces with each object in between the curly braces being known as an \textbf{element} of the set. If $S$ is a set and $x$ is an element of $S$, then $x \in S$, read `$x$ is in $S$'. If $S$ is a set and $x$ is \underline{not} an element of $S$, then $x \not\in S$, read `$x$ is not in $S$'. 
+\end{definition}
+
+\begin{note}{}{aoe}
+    It is important to note that \textbf{order does not matter} in a set. $\braces{1, 2, 3}$ is mathematically identical to $\braces{2, 3, 1}$. As well, repeating numbers does not affect sets: $\braces{1, 2, 3, 3}$ is identical to $\braces{1, 2, 3}$.
+\end{note}
+
+For any curious souls,~(\ref{th:aoe})~comes from the axiom of extension. \\ 
+As mathematicians we often need to discus sets in general, or define sets quickly through a single property. For this we have set builder notation:
+
+\begin{definition}{Set Builder Notation}{}
+    Let $S$ be a set and $P(x)$ be a property that some elements of $S$ may or may not satisfy. Then, the set of all elements of $S$ that satisfy $P(x)$ can be notated as, 
+    \begin{equation*}
+        \braces{x \in S \mid P(x)}
+    \end{equation*}
+    Recall that the $\mid$ is used to signify `such that'.
+\end{definition}
+
+\begin{example}{The Set of Even Integers}{}
+    If you were trying to define the set of even integers, $2\ZZ$, we could do it in the following way with set builder notation: 
+    \begin{equation*}
+        2\ZZ = \braces{x \in \ZZ \mid x \bmod 2 = 0}
+    \end{equation*}
+    This would be read as `the set of integers such that $x$ mod $2$ equals $0$'.
+\end{example}
+
+If you're confused on why I used $x \bmod 2$, check out~(\ref{th:moddiv}).
+
+\begin{definition}{Subset}{}
+    Let $A$ and $B$ be sets. $A$ is a \textbf{subset} of $B$ if, and only if, every element of $A$ is in $B$. Symbolically:
+    \begin{equation*}
+        A \subseteq B \Leftrightarrow \forall x \in A, \hspace{0.1cm} x \in B
+    \end{equation*}
+\end{definition}
+
+\begin{definition}{Proper Subset}{}
+    Let $A$ and $B$ be sets. $A$ is a \textbf{proper subset} of $B$ if, and only if, every element of $A$ is in $B$, but there exists an element of $B$ not in $A$. Symbolically:
+    \begin{equation*}
+        A \subset B \Leftrightarrow \forall x \in A, \hspace{0.1cm} x \in B \land \exists y \in B \st y \not\in A
+    \end{equation*}
+\end{definition}
+
+\begin{note}{}{}
+    Its important to note that $A \subseteq B$ implies that $A$ may be equal to $B$. However, $A \subset B$ implies that $A$ is not equal to $B$. The distinction is similar to that of $<$ and $\leq$, yet unlike these two, you'll see $\subseteq$ more commonly that $\subset$.
+\end{note}
+
+\begin{definition}{The Empty Set}{}
+    The empty set, denoted $\varnothing$, is the unique set with no elements. 
+\end{definition}
+
+\begin{question}{}{}
+    Determine whether $A \subset B$, $A \subseteq B$, or if $A$ has no relation to $B$.
+    \begin{questions}
+        \question{$A = \braces{1, 2, 3}$ and $B=\braces{1, 2, 3}$}
+
+        \question{$A = \braces{1, 2, 3}$ and $B=\braces{1, 2, 3, 4}$}
+
+        \question{$A = \braces{1, 2, 3}$ and $B=\braces{1}$}
+    \end{questions}
+\end{question}
+
+It should be immediate to see that the empty set will be a subset of every set as by the definition of a subset, every element in the empty set is in any given set. \\
+Similar to how we have addition and subtraction for integers, we also have operations for sets:. 

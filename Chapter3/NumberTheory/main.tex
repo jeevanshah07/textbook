@@ -10,95 +10,83 @@ Lets begin with the basics.
     The set of integers, represented $\QQ$, contains all numbers that can be represented as fractions. Symbolically, $\QQ = \braces{\frac{m}{n} \mid m, n \in \ZZ\left(n \neq 0\right)}$
 \end{definition}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}
+\begin{thm}{}
     Every integer is a rational number.
-\end{theorem}
-\begin{proof}
-    Trivial.
-\end{proof}
-\end{tcolorbox}
+    \begin{proof}
+        Trivial.
+    \end{proof}
+\end{thm}
 
 \begin{definition}{Even and Odd Numbers}{}
     A number is \textbf{even} if, and only if, it is some multiple of $2$. Symbolically, $n$ is even $\Leftrightarrow n=2k$ for some $k \in \ZZ$. A number if \textbf{odd} if, and only if, it is some multiple of $2$ plus $1$. Symbolically, $n$ is odd $\Leftrightarrow n=2k+1$ for $k\in\ZZ$.
 \end{definition}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}{\label{thm:3.1}}
+\begin{thm}{}{\label{thm:3.1}}
     All integers are either even or odd
-\end{theorem}
-\begin{proof}
-    Theorem~(\ref{thm:3.1})~will be proved later in the section.
-\end{proof}
-\end{tcolorbox}
+    \begin{proof}
+        Theorem~(\ref{thm:3.1})~will be proved later in the section.
+    \end{proof}
+\end{thm}
 
 \begin{definition}{Prime and Composite Numbers}{}
     A number is \textbf{prime} if, and only if, its only divisors are $1$ and itself. In other words, $n$ is prime $\Leftrightarrow \forall p, q \in \ZZ, \hspace{0.1cm} n=pq \Rightarrow p=n \lor q=n$. A number is \textbf{composite} if, and only if, it has more divisors than $1$ and itself. Symbolically, $n$ is composite $\Leftrightarrow \exists \hspace{0.1cm} pq \in \ZZ$ such that $n=pq$ and neither $p$ nor $q$ equal $n$. 
 \end{definition}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}
+\begin{thm}{}
     $1$ is neither prime nor composite.
-\end{theorem}
-\begin{proof}
-    Trivial.
-\end{proof}
-\end{tcolorbox}
+    \begin{proof}
+        Trivial.
+    \end{proof}
+\end{thm}
 
-\begin{tcolorbox}[colback=orange!70]
-\begin{lemma}
+\begin{lma}{}
     Every integer except $1$ is either prime or composite. 
-\end{lemma}
-\begin{proof}
-    The proof is left as an exercise to the reader.
-\end{proof}
-\end{tcolorbox}
+    \begin{proof}
+        The proof is left as an exercise to the reader.
+    \end{proof}
+\end{lma}
 
 \begin{question}{Sum of two rational numbers}{}
     Is the sum of two rational numbers also a rational number? Prove or give a counter example.
 \end{question}
 
 \begin{fact}{Closure}{}
-    For those who are familiar with abstract algebra and set theory, given by the results of the previous question. Since the sum of two rational numbers is also rational we can say that the rational numbers are \textbf{closed} under the operation of addition. Symbolically: $\forall m, n \in \QQ, \hspace{0.1cm} m + n \in \QQ$. All this means is that for every two rational numbers, their sum is also a rational number. 
+ Since the sum of two rational numbers is also rational we can say that the rational numbers are \textbf{closed} under the operation of addition. Symbolically: $\forall m, n \in \QQ, \hspace{0.1cm} m + n \in \QQ$. All this means is that for every two rational numbers, their sum is also a rational number. 
 \end{fact}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}{\label{thm:intclosure}}
+\begin{thm}{}{\label{thm:intclosure}}
     The set of integers is closed under addition, subtraction, and multiplication.
-\end{theorem}
-\begin{proof}
-    Trivial
-\end{proof}
-\end{tcolorbox}
+    \begin{proof}
+        Trivial
+    \end{proof}
+\end{thm}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}{\label{thm:qqclosure}}
+\begin{thm}{\label{thm:qqclosure}}
     The set of rational numbers is closed under addition, multiplication, subtraction.
-\end{theorem}
-\begin{proof}
-    Let $m, n \in \QQ$. Then $m = \frac{a}{b}$ and $n = \frac{c}{d}$ for $a, b, c, d \in ZZ$ with $b, d \neq 0$.\\
-    \hspace*{2em}{\underline{Closure under addition:}} It follows that, 
-    \begin{align*}
-        m + n &= \frac{a}{b} + \frac{c}{d} \\
-        &= \frac{a}{b}\left(\frac{d}{d}\right) + \frac{c}{d}\left(\frac{b}{b}\right) \\
-        &= \frac{ad}{bd} + \frac{bc}{bd} \\
-        &= \frac{ad + bd}{bd}
-    \end{align*}
-    Since, $b \neq 0$ and $d \neq 0$, $bd \neq$. It follows from Theorem~(\ref{thm:intclosure})~that $ad + bd \in ZZ$ and $bd \in ZZ$ so by definition of $\QQ$, $m +n \in \QQ$. \\
+    \begin{proof}
+        Let $m, n \in \QQ$. Then $m = \frac{a}{b}$ and $n = \frac{c}{d}$ for $a, b, c, d \in ZZ$ with $b, d \neq 0$.\\
+        \hspace*{2em}{\underline{Closure under addition:}} It follows that, 
+        \begin{align*}
+            m + n &= \frac{a}{b} + \frac{c}{d} \\
+            &= \frac{a}{b}\left(\frac{d}{d}\right) + \frac{c}{d}\left(\frac{b}{b}\right) \\
+            &= \frac{ad}{bd} + \frac{bc}{bd} \\
+            &= \frac{ad + bd}{bd}
+        \end{align*}
+        Since, $b \neq 0$ and $d \neq 0$, $bd \neq$. It follows from Theorem~(\ref{thm:intclosure})~that $ad + bd \in ZZ$ and $bd \in ZZ$ so by definition of $\QQ$, $m +n \in \QQ$. \\
 
-    \hspace*{2em} \underline{Closure under subtraction:} It follows that,
-    \begin{equation*}
-        m - n = \frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}
-    \end{equation*}
-    Following the logic as above, $\frac{ad - bc}{bd} \in \QQ \Rightarrow m - n \in \QQ$ \\
-    \hspace*{2em} \underline{Closure under multiplication:} It follows that, 
-    \begin{equation*}
-        mn = \left(\frac{a}{b}\right)\left(\frac{c}{d}\right) = \frac{ac}{bd}
-    \end{equation*}
-    Since, $ac \in \ZZ$ and $bd \in \ZZ \setminus {0}$, we have that $\frac{ac}{bd} = mn \in \QQ$ by definition of $\QQ$. \\
-    Thus we have shown that $\QQ$ is closed under addition, subtraction, and multiplication.
-\end{proof}
-\end{tcolorbox}
+        \hspace*{2em} \underline{Closure under subtraction:} It follows that,
+        \begin{equation*}
+            m - n = \frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}
+        \end{equation*}
+        Following the logic as above, $\frac{ad - bc}{bd} \in \QQ \Rightarrow m - n \in \QQ$ \\
+        \hspace*{2em} \underline{Closure under multiplication:} It follows that, 
+        \begin{equation*}
+            mn = \left(\frac{a}{b}\right)\left(\frac{c}{d}\right) = \frac{ac}{bd}
+        \end{equation*}
+        Since, $ac \in \ZZ$ and $bd \in \ZZ \setminus {0}$, we have that $\frac{ac}{bd} = mn \in \QQ$ by definition of $\QQ$. \\
+        Thus we have shown that $\QQ$ is closed under addition, subtraction, and multiplication.
+    \end{proof}
+\end{thm}
 
 \begin{note}{$\QQ$ closed under division}{}
     Eagle eyed readers might have noticed that Theorem~(\ref{thm:qqclosure})~does not mention division. This obviously because $0 \in \QQ$ and you cannot divide by $0$. Thus, in order for the rational numbers to be closed under all four operations we must exclude $0$ to create the set $\QQ \setminus \braces{0}$. 
@@ -123,15 +111,13 @@ Lets begin with the basics.
     Prove the final two statements from example~(\ref{th:divisibility})
 \end{question}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}[Quotient-Remainder Theorem]
+\begin{thm}{Quotient-Remainder Theorem}
     Let $n \in \ZZ$ and $d \in \ZZ^{+}$. Then 
     \begin{equation*}
         n = qd + r
     \end{equation*}
     where $0 \leq r < d$ for unique integers $q$ and $r$.
-\end{theorem}
-\end{tcolorbox}
+\end{thm}
 
 \begin{question}{Application of the Quotient Remainder Theorem}{}
     Given the following values of $n$ and $d$, find unique integers $q$ and $r$ such that $n = qd + r$ where $0 \leq r < d$:
@@ -142,7 +128,7 @@ Lets begin with the basics.
     \end{questions}
 \end{question}
 
-\begin{definition}{$\bmod$ and $\intdiv$}{}
+\begin{definition}{$\bmod$ and $\intdiv$}{moddiv}
     Let $n \in \ZZ$ and $d \in \ZZ^{+}$ such that $n = qd + r$ where $q$ and $r$ are unique integers and $0 \leq r < d$. Then $n \intdiv d = q$ and $n \bmod d = r$.
 \end{definition}
 
@@ -159,6 +145,22 @@ If you've ever programmed before the $\intdiv$ should remind you an awful lot of
 \end{equation*}
 Given $m, n, d \in \ZZ$ such that $n = md$
 
+\subsubsection{Floor and Ceil}
+\begin{definition}{Floor}{}
+    Let $x \in \RR$. The \textbf{floor} of $x$, notated $\floor{x}$ is the unique integer $n = \floor{x}$ such that $n \leq x < n+1$.
+\end{definition}
+
+It's worth noting that an alternative way to think of the floor operation is simply truncating any decimals in a number. For example, if you were to have $x = 6.23456$ and you wished to find the floor of $x$, all you would have to do is take the integer part of the decimal representation. Thus, $\floor{x} = 6$. More formally, given $x \in \RR$ with decimal representation $x = t.{d_1}{d_2}{d_2}\dots{d_n}$, then $\floor{x} = t$.
+
+\begin{definition}{Ceil}{}
+    Let $x \in \RR$. The \textbf{floor} of $x$, notated $\ceil{x}$, is the unique integer $n = \ceil{x}$ such that $n - 1 < x \leq n$.
+\end{definition}
+
+In their most simplistic form, one can think of the floor and ceil operations as rounding down or rounding up, respectively. 
+
+\begin{question}{}{}
+    Is $\floor{x + y} = \floor{x} + \floor{y} \hspace{0.1cm} \forall x, y \in \RR$? What if $x \in \RR$ but $y \in \ZZ$?   Prove or give a counterexample for both scenarios.
+\end{question}
 \subsubsection{Theorems and such}
 Due to the structuring of this section and my lack of planning I've decided that this is the perfect section to talk about and prove some interesting theorems related to basic number theory. For more advanced readers I encourage you to try to write out your own proof before looking at the written one. \\
 Before getting into the first theorem we must start with a new definition:
@@ -167,26 +169,41 @@ Before getting into the first theorem we must start with a new definition:
     The fact that any integer is either even or odd is known as the \textbf{parity property}
 \end{definition}
 
-\begin{tcolorbox}[colback=pink!70]
-    \begin{theorem}
+\begin{thm}{}
         Consecutive integers have opposite parity.
-    \end{theorem}
     \begin{proof}
         Let $x \in \ZZ$. Then by the parity property, $x$ is either even or odd. \\
         \hspace*{2em}\underline{$x$ is even:} Assume $x$ is even. Then by definition of even numbers, $x = 2n$ for some $n \in \ZZ$. Then $x+1 = 2n+1$ which is odd by defintion of odd numbers. It follows that $x$ and $x+1$ have opposite parities.  \\
         \hspace*{2em}\underline{$x$ is odd:} Assume $x$ is odd. Then by defintion of odd numbers, $x = 2n+1$ for some $n\in\ZZ$. Then, $x+1 = (2n + 1) + 1 = 2n + 2 = 2(n + 1)$. Since the integers are closed under addition and multiplication (see~\ref{thm:intclosure}), $n+1$ is an integers, and thus $x+1$ is even since it is of the form $2k$ where $k \in \ZZ$. It follows that $x$ and $x+1$ has opposite parities. \\
         Thus, regardless of if any given integer is even or odd, the next consecutive integer will be of opposite parity.
     \end{proof}
-\end{tcolorbox}
+\end{thm}
 
-\begin{tcolorbox}[colback=pink!70]
-\begin{theorem}[The Triangle Inequality]
-    The $x, y \in \RR$. Then, 
-    \begin{equation*}
-        |x + y| \leq |x| + |y|
-    \end{equation*}
-\end{theorem}
-\begin{proof}
-    
-\end{proof}
-\end{tcolorbox}
+For those who are familiar with computer science and engineering this idea of `parity' may feel familiar to you if you've every hear of the `parity bit'. For those who don't know, the parity bit is one of the bits of information that makes a number either even or odd. For example, if we were to represent $9$ in binary we would have: $1001$. In this case, the final (the rightmost) $1$ is the parity bit.
+
+\begin{thm}{}{\label{thm:3.9}}
+    There is no greatest integer. 
+    \begin{proof}
+        We will begin by assuming the opposite in order to find a contradiction. Assume that there is a greatest integer $N$. Now let $n= N+1$. Since the integers are closed under addition (\ref{thm:intclosure}), it follows that $n$ is an integer and $n > N$. Thus we have reached a contradiction since $N$ is the greatest integer but there exists an integer greater that $N$, namely $n$. It follows that there must not be a greatest integer.
+    \end{proof}
+\end{thm}
+
+I feel that it is only right to follow Theorem~\ref{thm:3.9}~with another classic proof by contradiction.
+
+\begin{thm}{}
+    $\sqrt{2}$ is not rational.
+    \begin{proof}
+        We will begin by assuming the opposite in order to reach a contradiction. First, assume that $\sqrt{2} \in \QQ$. By definition of $\QQ$ there must exist integer $p, q \in \ZZ$ with $q \ne 0$ such that $\frac{p}{q} = \sqrt{2}$ and $\gcd(p, q) = 1$. Then,
+        \begin{align*}
+            \frac{p}{q} = \sqrt{2} &\Rightarrow \frac{p^2}{q^2} = 2 \\
+            &\Rightarrow p^2 = 2q^2 \\
+            &\Rightarrow p = 2k \tag{since it's square is even} \\
+            &\Rightarrow 4k^2 = 2q^2 \\
+            &\Rightarrow 2k^2 = q^2 \\
+            &\Rightarrow 2 \mid q
+        \end{align*}
+        Thus we have reached a contradiction as $2 \mid p$ and $2 \mid q$ but $\gcd(p, q) = 1$. Therefore, $\sqrt{2} \not\in \QQ$ 
+    \end{proof}
+\end{thm}
+
+One beautiful thing about the above proof is the way is combines almost everything we've discussed in the previous few pages. The ideas of divisibility, even and odd numbers, and the definitions of the rational numbers. For this reason I find this to be a fitting theorem to end off with.

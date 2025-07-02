@@ -27,6 +27,8 @@
 \newcommand{\RR}{\mathbb R}
 \newcommand{\NN}{\mathbb N}
 \newcommand{\braces}[1]{\{#1\}}
+\newcommand{\floor}[1]{\ensuremath{\left\lfloor #1 \right\rfloor}}
+\newcommand{\ceil}[1]{\ensuremath{\left\lceil #1 \right\rceil}}
 
 \hypersetup{
     colorlinks=true,
@@ -83,3 +85,7 @@
 \newtheorem{corollary}{Corollary}[section]
 
 \DeclareMathOperator{\intdiv}{div}
+
+\newenvironment{thm}[1]{\begin{tcolorbox}[colback=pink!70]\begin{theorem}[#1]}{\end{theorem}\end{tcolorbox}}
+
+\newenvironment{lma}[1]{\begin{tcolorbox}[colback=orange!70]\begin{lemma}[#1]}{\end{lemma}\end{tcolorbox}}
